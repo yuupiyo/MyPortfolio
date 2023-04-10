@@ -1,0 +1,20 @@
+@use "sass:math";
+
+//メディアクエリの設定
+//ブレイクポイント
+$tablet: 600px;
+$pc:     1025px;
+
+//タブレットサイズ以上しかスタイリングしない時に使う
+@mixin tablet {
+  @media screen and (width >= $tablet) {
+    @content;
+  }
+}
+
+//pcサイズのみしかスタイリングしない時に使う
+@mixin pc {
+  @media screen and (width >= $pc) {
+    @content;
+  }
+}
