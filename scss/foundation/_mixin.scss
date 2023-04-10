@@ -25,3 +25,25 @@ $root-size: 16; //htmlに設定してあるfont-size
 @function rem($px) {
   @return math.div($px, $root-size) * 1rem;
 }
+
+//pxをvwに変換する関数
+//スマホver.
+$sp-viewport: 375; //デザインカンプの画面幅
+
+@function sp-vw($num, $width:$sp-viewport) {
+  @return(1vw * $num/$width * 100);
+}
+
+//タブレットver.
+$tb-viewport: 768; //デザインカンプの画面幅
+
+@function tb-vw($num, $width:$tb-viewport) {
+  @return(1vw * $num/$width * 100);
+}
+
+//パソコンver.
+$pc-viewport: 1280; //デザインカンプの画面幅
+
+@function pc-vw($num, $width:$pc-viewport) {
+  @return(1vw * $num/$width * 100);
+}
