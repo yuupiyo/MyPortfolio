@@ -16,4 +16,9 @@ img {
   border: none;
   display: block;
 }
+
+.c-flex {
+  display: flex;
+  flex-direction: row;
+}
 /*# sourceMappingURL=style.css.map */
