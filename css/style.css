@@ -34,4 +34,11 @@ img {
   font-family: "Zen Kaku Gothic New", sans-serif;
   font-weight: 700;
 }
+
+.c-font-color__brown {
+  color: #3A291C;
+}
+.c-font-color__white {
+  color: #FFFFFF;
+}
 /*# sourceMappingURL=style.css.map */
