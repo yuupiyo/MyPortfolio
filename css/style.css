@@ -24,6 +24,7 @@ img {
 
 .c-font-family__en {
   font-family: "Lato", sans-serif;
+  font-weight: 700;
 }
 .c-font-family__ja {
   font-family: "Zen Kaku Gothic New", sans-serif;

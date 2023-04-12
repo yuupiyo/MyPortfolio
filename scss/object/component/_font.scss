@@ -4,8 +4,10 @@
 .c-font-family {
 
   //英単語に使うフォント
+  //今回は太字のみしか使っていません。
   &__en {
     font-family: 'Lato', sans-serif;
+    font-weight: 700;
   }
 
   //日本語に使うフォント
