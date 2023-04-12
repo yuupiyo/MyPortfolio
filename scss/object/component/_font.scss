@@ -1,15 +1,20 @@
 @use "../../foundation/global" as g;
 
+//フォントの種類の設定
 .c-font-family {
+
+  //英単語に使うフォント
   &__en {
     font-family: 'Lato', sans-serif;
   }
 
+  //日本語に使うフォント
+  //文字の太さ：通常ver
   &__ja {
     font-family: 'Zen Kaku Gothic New', sans-serif;
     font-weight: 400;
   }
-
+  //文字の太さ：太さver
   &__ja--bold {
     font-family: 'Zen Kaku Gothic New', sans-serif;
     font-weight: 700;
