@@ -1,0 +1,8 @@
+@use "../../foundation/global" as g;
+
+//グラスモーフィズム部分(header部分に使用)
+.c-background--glass {
+  background:              rgba( 255,  255,  255, 0.5   );
+  backdrop-filter:         blur( 4px   );
+  -webkit-backdrop-filter: blur( 4px   );
+}

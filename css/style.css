@@ -41,4 +41,10 @@ img {
 .c-font-color__white {
   color: #FFFFFF;
 }
+
+.c-background--glass {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
 /*# sourceMappingURL=style.css.map */
