@@ -1,1 +1,17 @@
+@use "../../foundation/global" as g;
 
+.c-font-family {
+  &__en {
+    font-family: 'Lato', sans-serif;
+  }
+
+  &__ja {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-weight: 400;
+  }
+
+  &__ja--bold {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-weight: 700;
+  }
+}

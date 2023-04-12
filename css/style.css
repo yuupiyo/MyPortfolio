@@ -21,4 +21,16 @@ img {
   display: flex;
   flex-direction: row;
 }
+
+.c-font-family__en {
+  font-family: "Lato", sans-serif;
+}
+.c-font-family__ja {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 400;
+}
+.c-font-family__ja--bold {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+}
 /*# sourceMappingURL=style.css.map */
