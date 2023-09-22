@@ -1,0 +1,9 @@
+@use "../../foundation/global" as g;
+
+.p-mainvisual {
+  width: 100vw;
+  height: 100dvh;
+  position: relative;
+  display: grid;
+  place-content: center;
+}

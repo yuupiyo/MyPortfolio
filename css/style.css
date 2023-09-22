@@ -7,7 +7,8 @@ html {
 body {
   width: 100vw;
   overflow-x: hidden;
-  background-color: bisque;
+  background-color: #fff;
+  text-align: center;
 }
 
 img {
@@ -54,11 +55,23 @@ img {
           backdrop-filter: blur(20px);
 }
 
+.c-title__h1 {
+  font-size: 6.25rem;
+}
+
 .p-header {
   position: fixed;
   width: 100vw;
   height: 3.25rem;
   z-index: 1;
+}
+
+.p-mainvisual {
+  width: 100vw;
+  height: 100dvh;
+  position: relative;
+  display: grid;
+  place-content: center;
 }
 
 .p-nav {
