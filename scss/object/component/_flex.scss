@@ -1,6 +1,13 @@
 @use "../../foundation/global" as g;
 
 .c-flex {
-  display: flex;
+  display:        flex;
   flex-direction: row;
+  &__nav {
+    @extend .c-flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    gap:    g.rem(35);
+  }
 }
