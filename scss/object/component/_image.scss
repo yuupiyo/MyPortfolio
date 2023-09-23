@@ -1,0 +1,12 @@
+@use "../../foundation/global" as g;
+
+.c-image {
+  &__main {
+    position: absolute;
+    &--leftTop {
+      @extend .c-image__main;
+      top: g.rem(-204);
+      left: 0;
+    }
+  }
+}

@@ -55,6 +55,14 @@ img {
           backdrop-filter: blur(20px);
 }
 
+.c-image__main, .c-image__main--leftTop {
+  position: absolute;
+}
+.c-image__main--leftTop {
+  top: -12.75rem;
+  left: 0;
+}
+
 .c-title__h1 {
   font-size: 6.25rem;
 }
