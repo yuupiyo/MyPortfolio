@@ -3,11 +3,15 @@
 .c-image {
   &__main {
     position: absolute;
-    &--leftTop {
+    top: 0;
+    height: 100dvh;
+    &--left {
       @extend .c-image__main;
-      top: 0;
-      left: 0;
-      background-color: transparent;
+      left: g.rem(-338);
+    }
+    &--right {
+      @extend .c-image__main;
+      right: g.rem(-378);
     }
   }
 }

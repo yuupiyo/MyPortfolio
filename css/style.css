@@ -55,13 +55,16 @@ img {
           backdrop-filter: blur(20px);
 }
 
-.c-image__main, .c-image__main--leftTop {
+.c-image__main, .c-image__main--right, .c-image__main--left {
   position: absolute;
-}
-.c-image__main--leftTop {
   top: 0;
-  left: 0;
-  background-color: transparent;
+  height: 100dvh;
+}
+.c-image__main--left {
+  left: -21.125rem;
+}
+.c-image__main--right {
+  right: -23.625rem;
 }
 
 .c-title__h1 {
