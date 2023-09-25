@@ -78,6 +78,10 @@ img {
   z-index: 1;
 }
 
+.p-main {
+  padding-top: 10rem;
+}
+
 .p-mainvisual {
   width: 100vw;
   height: 100dvh;
