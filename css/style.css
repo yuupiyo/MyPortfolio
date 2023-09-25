@@ -59,8 +59,9 @@ img {
   position: absolute;
 }
 .c-image__main--leftTop {
-  top: -12.75rem;
+  top: 0;
   left: 0;
+  background-color: transparent;
 }
 
 .c-title__h1 {
