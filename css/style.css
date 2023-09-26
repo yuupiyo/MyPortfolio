@@ -49,6 +49,10 @@ img {
   color: #FFFFFF;
 }
 
+.c-font-size {
+  font-size: 1rem;
+}
+
 .c-background--glass {
   background: rgba(255, 255, 255, 0.3);
   -webkit-backdrop-filter: blur(20px);
@@ -67,8 +71,25 @@ img {
   right: -23.625rem;
 }
 
+.c-inner {
+  width: clamp(20.438rem, 4.2rem + 69.28vw, 59.625rem);
+  margin: 0 auto;
+}
+
 .c-title__h1 {
   font-size: 6.25rem;
+}
+.c-title__h2 {
+  font-size: 3.125rem;
+  margin-bottom: 5rem;
+}
+.c-title__h3, .c-title__h3--about {
+  font-size: 1.875rem;
+}
+.c-title__h3--about {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #1B8343;
 }
 
 .p-header {
@@ -78,7 +99,7 @@ img {
   z-index: 1;
 }
 
-.p-main {
+.l-main {
   padding-top: 10rem;
 }
 

@@ -1,0 +1,6 @@
+@use "../../foundation/global" as g;
+
+.c-inner {
+  width: clamp(20.438rem, 4.2rem + 69.28vw, 59.625rem);
+  margin: 0 auto;
+}
