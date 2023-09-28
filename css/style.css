@@ -18,7 +18,11 @@ img {
   display: block;
 }
 
-.c-flex, .c-flex__nav {
+.l-main {
+  padding-top: 10rem;
+}
+
+.c-flex, .c-flex__about, .c-flex__nav {
   display: flex;
   flex-direction: row;
 }
@@ -27,6 +31,9 @@ img {
   align-items: center;
   height: 100%;
   gap: 2.1875rem;
+}
+.c-flex__about {
+  justify-content: space-between;
 }
 
 .c-font-family__en {
@@ -92,15 +99,17 @@ img {
   border-bottom: 2px solid #1B8343;
 }
 
+.p-about__info {
+  width: clamp(20.438rem, 17.511rem + 12.49vw, 27.5rem);
+  text-align: left;
+  padding: 1.25rem 1.5rem 1.5rem;
+}
+
 .p-header {
   position: fixed;
   width: 100vw;
   height: 3.25rem;
   z-index: 1;
-}
-
-.l-main {
-  padding-top: 10rem;
 }
 
 .p-mainvisual {

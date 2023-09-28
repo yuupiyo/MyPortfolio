@@ -10,4 +10,8 @@
     height: 100%;
     gap:    g.rem(35);
   }
+  &__about {
+    @extend .c-flex;
+    justify-content: space-between;
+  }
 }

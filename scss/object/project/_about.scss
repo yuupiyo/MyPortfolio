@@ -1,0 +1,9 @@
+@use "../../foundation/global" as g;
+
+.p-about {
+  &__info {
+    width: clamp(20.438rem, 17.511rem + 12.49vw, 27.5rem);
+    text-align: left;
+    padding: g.rem(20) g.rem(24) g.rem(24);
+  }
+}
