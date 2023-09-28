@@ -14,4 +14,9 @@
     @extend .c-flex;
     justify-content: space-between;
   }
+  &__sns {
+    @extend .c-flex;
+    justify-content: flex-end;
+    gap: g.rem(16);
+  }
 }
