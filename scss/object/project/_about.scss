@@ -1,9 +1,30 @@
 @use "../../foundation/global" as g;
 
 .p-about {
+  &__photo {
+    width: clamp(20.438rem, 17.511rem + 12.49vw, 27.5rem);
+    align-self: flex-end;
+    position: relative;
+    &::after {
+      content: "";
+      width: g.rem(340);
+      height: g.rem(300);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: g.$color-yellow;
+      z-index: -1;
+    }
+    & img {
+      margin: 0 auto;
+    }
+  }
   &__info {
     width: clamp(20.438rem, 17.511rem + 12.49vw, 27.5rem);
     text-align: left;
     padding: g.rem(20) g.rem(24) g.rem(24);
+    border-radius: 20px;
+    background: #fff;
+    box-shadow:  14px 14px 30px #bebebe;
   }
 }

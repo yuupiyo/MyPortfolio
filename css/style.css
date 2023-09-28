@@ -91,7 +91,7 @@ img {
   font-size: 6.25rem;
 }
 .c-title__h2 {
-  font-size: 3.125rem;
+  font-size: 3.75rem;
   margin-bottom: 5rem;
 }
 .c-title__h3, .c-title__h3--about {
@@ -103,10 +103,31 @@ img {
   border-bottom: 2px solid #1B8343;
 }
 
+.p-about__photo {
+  width: clamp(20.438rem, 17.511rem + 12.49vw, 27.5rem);
+  align-self: flex-end;
+  position: relative;
+}
+.p-about__photo::after {
+  content: "";
+  width: 21.25rem;
+  height: 18.75rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #E5D41C;
+  z-index: -1;
+}
+.p-about__photo img {
+  margin: 0 auto;
+}
 .p-about__info {
   width: clamp(20.438rem, 17.511rem + 12.49vw, 27.5rem);
   text-align: left;
   padding: 1.25rem 1.5rem 1.5rem;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 14px 14px 30px #bebebe;
 }
 
 .p-header {
