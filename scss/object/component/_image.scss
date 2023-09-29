@@ -14,4 +14,20 @@
       right: g.rem(-378);
     }
   }
+  &__about {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    &::before {
+      content: "";
+      width: g.rem(340);
+      height: g.rem(300);
+      position: absolute;
+      bottom: 0;
+      left: 10%;
+      background-color: g.$color-yellow;
+      border-radius: 68% 32% 42% 58% / 63% 50% 50% 37% ;
+      z-index: -1;
+    }
+  }
 }

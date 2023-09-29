@@ -4,17 +4,7 @@
   &__photo {
     width: clamp(20.438rem, 17.511rem + 12.49vw, 27.5rem);
     align-self: flex-end;
-    position: relative;
-    &::after {
-      content: "";
-      width: g.rem(340);
-      height: g.rem(300);
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      background-color: g.$color-yellow;
-      z-index: -1;
-    }
+    
     & img {
       margin: 0 auto;
     }
