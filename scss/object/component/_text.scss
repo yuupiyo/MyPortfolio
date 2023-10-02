@@ -1,0 +1,9 @@
+@use "../../foundation/global" as g;
+
+.c-text {
+  text-align: left;
+  &__skills {
+    @extend .c-text;
+    margin-top: g.rem(32);
+  }
+}

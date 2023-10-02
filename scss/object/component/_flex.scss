@@ -19,4 +19,18 @@
     justify-content: flex-end;
     gap: g.rem(16);
   }
+  &__skills {
+    @extend .c-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: g.rem(40);
+  }
+  &__icon {
+    @extend .c-flex;
+    justify-content: center;
+    gap: g.rem(16);
+  }
+  &__sass {
+    align-self: center;
+  }
 }

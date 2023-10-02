@@ -1,0 +1,6 @@
+@use "../../foundation/global" as g;
+
+.c-card {
+  width: clamp(20.438rem, 17.692rem + 11.71vw, 27.063rem);
+  padding: g.rem(40);
+}
