@@ -114,6 +114,9 @@ img {
   border-radius: 68% 32% 42% 58%/63% 50% 50% 37%;
   z-index: -1;
 }
+.c-image__WordPress {
+  margin: 0 auto;
+}
 
 .c-inner {
   width: clamp(20.438rem, 4.2rem + 69.28vw, 59.625rem);
