@@ -22,7 +22,7 @@ img {
   padding-top: 10rem;
 }
 
-.c-flex, .c-flex__icon, .c-flex__skills, .c-flex__sns, .c-flex__about, .c-flex__nav {
+.c-flex, .c-flex__icon, .c-flex__section, .c-flex__sns, .c-flex__about, .c-flex__nav {
   display: flex;
   flex-direction: row;
 }
@@ -39,7 +39,7 @@ img {
   justify-content: flex-end;
   gap: 1rem;
 }
-.c-flex__skills {
+.c-flex__section {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 2.5rem;
@@ -130,13 +130,16 @@ img {
   font-size: 3.75rem;
   margin-bottom: 5rem;
 }
-.c-title__h3, .c-title__h3--about {
+.c-title__h3, .c-title__h3--works, .c-title__h3--about {
   font-size: 1.875rem;
 }
 .c-title__h3--about {
   display: inline-block;
   margin-bottom: 1.5rem;
   border-bottom: 2px solid #1B8343;
+}
+.c-title__h3--works {
+  margin-bottom: 2rem;
 }
 
 .c-section {
