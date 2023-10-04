@@ -1,0 +1,12 @@
+@use "../../foundation/global" as g;
+
+.p-contact {
+  &__inner {
+    width: g.rem(400);
+    height: g.rem(300);
+    margin: 0 auto;
+    padding: g.rem(80) g.rem(24) ;
+    border-radius: 50%;
+    box-shadow:  14px 14px 30px #bebebe;
+  }
+}

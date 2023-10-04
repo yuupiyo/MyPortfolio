@@ -1,0 +1,7 @@
+@use "../../foundation/global" as g;
+
+.c-button {
+  padding: g.rem(8) g.rem(24);
+  background: g.$color-green;
+  border-radius: g.rem(20);
+}

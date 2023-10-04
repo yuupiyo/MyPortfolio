@@ -6,4 +6,8 @@
     @extend .c-text;
     margin-top: g.rem(32);
   }
+  &__contact {
+    font-size: g.rem(20);
+    margin-bottom: g.rem(36);
+  }
 }
