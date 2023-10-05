@@ -20,5 +20,9 @@
       @extend .c-title__h3;
       margin-bottom: g.rem(32);
     }
+    &--contact {
+      font-size: g.rem(20);
+      margin-bottom: g.rem(36);
+    }
   }
 }

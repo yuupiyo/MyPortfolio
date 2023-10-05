@@ -1,0 +1,23 @@
+@use "../../foundation/global" as g;
+
+.c-drop {
+  border-radius: 50%;
+  box-shadow: 14px 14px 30px #bebebe;
+  &__right {
+    @extend .c-drop;
+    width: g.rem(80);
+    height: g.rem(80);
+    margin-left: auto;
+  }
+  &__center {
+    @extend .c-drop;
+    display: inline-block;
+    padding: g.rem(105) g.rem(45);
+  }
+  &__left {
+    @extend .c-drop;
+    width: g.rem(100);
+    height: g.rem(100);
+    margin-right: auto;
+  }
+}

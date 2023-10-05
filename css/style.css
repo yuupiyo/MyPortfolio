@@ -87,6 +87,25 @@ img {
   padding: 2.5rem;
 }
 
+.c-drop, .c-drop__left, .c-drop__center, .c-drop__right {
+  border-radius: 50%;
+  box-shadow: 14px 14px 30px #bebebe;
+}
+.c-drop__right {
+  width: 5rem;
+  height: 5rem;
+  margin-left: auto;
+}
+.c-drop__center {
+  display: inline-block;
+  padding: 6.5625rem 2.8125rem;
+}
+.c-drop__left {
+  width: 6.25rem;
+  height: 6.25rem;
+  margin-right: auto;
+}
+
 .c-image__main, .c-image__main--right, .c-image__main--left {
   position: absolute;
   top: 0;
@@ -141,6 +160,10 @@ img {
 .c-title__h3--works {
   margin-bottom: 2rem;
 }
+.c-title__h3--contact {
+  font-size: 1.25rem;
+  margin-bottom: 2.25rem;
+}
 
 .c-section {
   margin-bottom: 15rem;
@@ -151,10 +174,6 @@ img {
 }
 .c-text__skills {
   margin-top: 2rem;
-}
-.c-text__contact {
-  font-size: 1.25rem;
-  margin-bottom: 2.25rem;
 }
 
 .c-border {
@@ -192,15 +211,6 @@ img {
   padding: 1.25rem 1.5rem 1.5rem;
   border-radius: 20px;
   background: #fff;
-  box-shadow: 14px 14px 30px #bebebe;
-}
-
-.p-contact__inner {
-  width: 25rem;
-  height: 18.75rem;
-  margin: 0 auto;
-  padding: 5rem 1.5rem;
-  border-radius: 50%;
   box-shadow: 14px 14px 30px #bebebe;
 }
 
