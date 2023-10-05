@@ -1,0 +1,6 @@
+@use "../../foundation/global" as g;
+
+.p-footer {
+  padding: g.rem(45) 0;
+  background: g.$color-brown;
+}

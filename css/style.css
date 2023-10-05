@@ -214,6 +214,11 @@ img {
   box-shadow: 14px 14px 30px #bebebe;
 }
 
+.p-footer {
+  padding: 2.8125rem 0;
+  background: #3A291C;
+}
+
 .p-header {
   position: fixed;
   width: 100vw;
