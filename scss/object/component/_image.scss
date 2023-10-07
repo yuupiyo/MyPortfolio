@@ -7,11 +7,11 @@
     height: 100dvh;
     &--left {
       @extend .c-image__main;
-      left: g.rem(-338);
+      left: g.rem(-742);
     }
     &--right {
       @extend .c-image__main;
-      right: g.rem(-378);
+      right: g.rem(-900);
     }
   }
   &__about {
