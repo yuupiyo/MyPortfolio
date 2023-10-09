@@ -26,15 +26,19 @@
   </header>
 
   <div class="p-mainvisual">
-    <h1 class="c-font-family__en c-font-color__brown c-title__h1">Yukari Hiyoshi<br>Portfolio</h1>
-    <picture>
-      <source srcset="./images/leaf-left.webp" type="image/webp">
-      <img class="c-image__main--left" src="./images/leaf-left.png" srcset="./images/leaf-left@2x.png 2x" width="1119" height="802" alt="メインビジュアルの左側に配置されている葉っぱの画像">
-    </picture>
-    <picture>
-      <source srcset="./images/leaf-right.webp" type="image/webp">
-      <img class="c-image__main--right" src="./images/leaf-right.png" srcset="./images/leaf-right@2x.png 2x" width="1825" height="802" alt="メインビジュアルの右側に配置されている葉っぱの画像">
-    </picture>
+    <div class="p-mainvisual__title">
+      <h1 class="c-font-family__en c-font-color__brown c-title__h1">Yukari Hiyoshi<br>Portfolio</h1>
+    </div>
+    <div class="p-mainvisual__image">
+      <picture>
+        <source srcset="./images/leaf-left.webp" type="image/webp">
+        <img class="c-image__main--left" src="./images/leaf-left.png" srcset="./images/leaf-left@2x.png 2x" width="1119" height="802" alt="メインビジュアルの左側に配置されている葉っぱの画像">
+      </picture>
+      <picture>
+        <source srcset="./images/leaf-right.webp" type="image/webp">
+        <img class="c-image__main--right" src="./images/leaf-right.png" srcset="./images/leaf-right@2x.png 2x" width="1825" height="802" alt="メインビジュアルの右側に配置されている葉っぱの画像">
+      </picture>
+    </div>
   </div>
 
   <main class="l-main">
@@ -50,8 +54,8 @@
           </li>
           <li class="p-about__info">
             <h3 class="c-font-family__en c-font-color__brown c-title__h3--about">Yukari Hiyoshi</h3>
-            <p class="c-font-family__ja c-font-color__brown c-font-size">43歳東京出身。結婚を機に宮崎県諸塚村へ移住。2022年春から独学でWeb制作の学習開始。コーディングの楽しさを知り、更なるレベルアップを図る為に同年6月オンラインスクールRaiseTech「WordPress副業コース」に入る。同年10月に完走。その後、初案件獲得しました！今も自分のスキルを上げるべく、日々、学習しています。</p>
-            <p class="c-font-family__ja c-font-color__brown c-font-size">日々の学習記録は、<a href="https://app.build-up.info/enterprises/bEDI6AXZ/portfolio/bQO1MTMgoTd" target="_blank">「BuildUp」</a>にて更新しております。</p>
+            <p class="c-font-family__ja c-font-color__brown c-font-size c-text__about">43歳東京出身。結婚を機に宮崎県諸塚村へ移住。2022年春から独学でWeb制作の学習開始。コーディングの楽しさを知り、更なるレベルアップを図る為に同年6月オンラインスクールRaiseTech「WordPress副業コース」に入る。同年10月に完走。その後、初案件獲得しました！今も自分のスキルを上げるべく、日々、学習しています。</p>
+            <p class="c-font-family__ja c-font-color__brown c-font-size c-text__about">日々の学習記録は、<a href="https://app.build-up.info/enterprises/bEDI6AXZ/portfolio/bQO1MTMgoTd" target="_blank">「BuildUp」</a>にて更新しております。</p>
             <ul class="c-flex__sns">
               <li>
                 <a href="https://codepen.io/your-work" target="_blank"><img src="./images/codepen.svg" width="54" height="54" alt="codepenのアイコン" loading="lazy"></a>
@@ -67,7 +71,7 @@
       <section id="skills" class="c-section">
         <h2 class="c-font-family__en c-font-color__brown c-title__h2">Skills</h2>
         <ul class="c-flex__section">
-          <li class="c-card c-border">
+          <li class="c-card__skills c-border">
             <ul class="c-flex__icon c-icon">
               <li><img src="./images/html.svg" width="53" height="81" alt="HTMLのアイコン" loading="lazy"></li>
               <li><img src="./images/css.svg" width="53" height="81" alt="CSSのアイコン" loading="lazy"></li>
@@ -78,13 +82,13 @@
               セマンティックなマークアップの意識、Sassを使っての作業の効率化、さらにCSS設計(FLOCSS)を取り入れて、メンテナンス性のあるコーディングをするように心がけています。他にもレスポンシブ対応、アニメーション、ハンバーガーメニュー等の動きも実装出来ます。
             </p>
           </li>
-          <li class="c-card c-border">
+          <li class="c-card__skills c-border">
             <img class="c-image__WordPress" src="./images/WordPress.svg" width="73" height="73" alt="WordPressのアイコン" loading="lazy">
             <p class="c-text__skills c-font-family__ja c-font-color__brown c-font-size">
               オリジナルテーマの制作、プラグインを使っての実装の経験があります。
             </p>
           </li>
-          <li class="c-card c-border">
+          <li class="c-card__skills c-border">
             <ul class="c-flex__icon c-icon">
               <li><img src="./images/vscode.svg" width="67" height="67" alt="VScodeのアイコン" loading="lazy"></li>
               <li><img src="./images/github02.svg" width="67" height="67" alt="GitHubのアイコン" loading="lazy"></li>
@@ -93,7 +97,7 @@
               コードエディターにはVisual Studio Codeを使用しています。また、GitHubを使ってのバージョン管理、ソースコードの共有も出来ます。
             </p>
           </li>
-          <li class="c-card c-border">
+          <li class="c-card__skills c-border">
             <ul class="c-flex__icon c-icon">
               <li><img src="./images/figma.svg" width="41" height="63" alt="figmaのアイコン" loading="lazy"></li>
               <li><img src="./images/XD.svg" width="63" height="63" alt="Adobe XDのアイコン" loading="lazy"></li>

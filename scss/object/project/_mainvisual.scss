@@ -3,7 +3,19 @@
 .p-mainvisual {
   width: 100vw;
   height: 100dvh;
-  position: relative;
-  display: grid;
-  place-content: center;
+  &__title {
+    max-width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    place-content: center;
+    position: relative;
+  }
+  &__image {
+    width: 1440px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
