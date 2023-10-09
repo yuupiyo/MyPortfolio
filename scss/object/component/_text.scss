@@ -2,7 +2,7 @@
 
 .c-text {
   text-align: left;
-  &__skills {
+  &__skill {
     @extend .c-text;
     margin-top: g.rem(32);
   }

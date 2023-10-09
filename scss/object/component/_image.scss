@@ -20,8 +20,8 @@
     position: relative;
     &::before {
       content: "";
-      width: g.rem(340);
-      height: g.rem(300);
+      width: clamp(18.438rem, 17.447rem + 4.23vw, 21.25rem);
+      height: clamp(15rem, 13.68rem + 5.63vw, 18.75rem);
       position: absolute;
       bottom: 0;
       left: 10%;

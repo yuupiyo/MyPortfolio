@@ -1,7 +1,7 @@
 @use "../../foundation/global" as g;
 
 .c-flex {
-  display:        flex;
+  display:  flex;
   flex-direction: row;
   &__nav {
     @extend .c-flex;
@@ -11,8 +11,13 @@
     gap:    g.rem(35);
   }
   &__about {
-    @extend .c-flex;
-    justify-content: space-between;
+    display: inline-flex;
+    flex-direction: column;
+    gap: g.rem(32);
+    @include g.pc {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
   &__sns {
     @extend .c-flex;
@@ -20,10 +25,14 @@
     gap: g.rem(16);
   }
   &__section {
-    @extend .c-flex;
-    justify-content: space-between;
+    display: inline-flex;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: g.rem(40);
+    @media screen and (width >= 1415px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
   &__icon {
     @extend .c-flex;
