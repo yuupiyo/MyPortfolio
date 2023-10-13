@@ -41,7 +41,7 @@
     </div> -->
   </div>
 
-  <main class="l-main">
+  <main class="l-main" ontouchstart="">
     <div class="c-inner">
       <section id="about" class="c-section p-about">
         <h2 class="c-font-family__en c-font-color__brown c-title__h2">About</h2>
@@ -113,12 +113,20 @@
       <section id="works" class="c-section">
         <h2 class="c-font-family__en c-font-color__brown c-title__h2">Works</h2>
         <ul class="c-flex__section">
-          <li class="c-card c-border">
-            <h3 class="c-font-family__en c-font-color__brown c-title__h3--works">My Portfolio</h3>
-            <picture>
-              <source srcset="./images/portfolio.webp" type="image/webp">
-              <img src="./images/portfolio.jpg" srcset="./images/portfolio@2x.jpg 2x" width="411" height="244" alt="このサイトの写真です!" loading="lazy">
-            </picture>
+          <li class="c-card__works">
+            <a href="#" class="c-card__inner c-border">
+              <div class="c-card__front">
+                <h3 class="c-font-family__en c-font-color__brown c-title__h3--works">My Portfolio</h3>
+                <picture>
+                  <source srcset="./images/portfolio.webp" type="image/webp">
+                  <img src="./images/portfolio.jpg" srcset="./images/portfolio@2x.jpg 2x" width="411" height="244" alt="このサイトの写真です!" loading="lazy">
+                </picture>
+                <button class="c-button__works c-font-family__en" type="button">Read More</button>  
+              </div>
+              <div class="c-card__back c-border__back">
+                <p class="c-font-family__ja c-font-color__brown c-font-size c-text">自身のポートフォリオです。企画、デザイン、コーディング、WordPress化、サーバーへのデプロイまで行いました。セマンティックなマークアップ、保守性のあるCSS設計をするように意識して制作しました。</p>
+              </div>
+            </a>
           </li>
           <li class="c-card c-border">
             <h3 class="c-font-family__en c-font-color__brown c-title__h3--works">Hamburger-site</h3>
