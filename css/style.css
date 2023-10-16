@@ -365,6 +365,10 @@ img {
 .c-text__about {
   margin-bottom: 1.5rem;
 }
+.c-text__buildup {
+  font-size: 1.125rem;
+  background: linear-gradient(transparent 60%, #ff6 60%);
+}
 
 .c-border, .c-border__back {
   border: 0.125rem solid #1B8343;
