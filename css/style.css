@@ -169,6 +169,82 @@ img {
   margin-right: auto;
 }
 
+.c-icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.c-icon__sns {
+  width: clamp(2.25rem, 1.854rem + 1.69vw, 3.375rem);
+}
+.c-icon__name {
+  position: absolute;
+  top: 0;
+  font-size: 0.875rem;
+  background: #fff;
+  color: #fff;
+  padding: 0.3125rem 0.5rem;
+  border-radius: 0.3125rem;
+  box-shadow: 0 0.625rem 0.625rem rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.c-icon__name::before {
+  position: absolute;
+  content: "";
+  height: 0.5rem;
+  width: 0.5rem;
+  background: #fff;
+  bottom: -0.1875rem;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@media (hover: hover) {
+  .c-icon:hover .c-icon__name {
+    top: -2.8125rem;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    text-shadow: 0px -0.0625rem 0px rgba(0, 0, 0, 0.1);
+  }
+  .c-icon:hover .c-icon__name,
+.c-icon:hover .c-icon__name::before {
+    background: #1B8343;
+    color: #FFFFFF;
+  }
+  .c-icon:hover .c-icon__codepen {
+    stroke: #1B8343;
+  }
+  .c-icon:hover .c-icon__github {
+    fill: #1B8343;
+  }
+}
+@media (hover: none) {
+  .c-icon:active .c-icon__name {
+    top: -2.8125rem;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    text-shadow: 0px -0.0625rem 0px rgba(0, 0, 0, 0.1);
+  }
+  .c-icon:active .c-icon__name,
+.c-icon:active .c-icon__name::before {
+    background: #1B8343;
+    color: #FFFFFF;
+  }
+  .c-icon:active .c-icon__codepen {
+    stroke: #1B8343;
+  }
+  .c-icon:active .c-icon__github {
+    fill: #1B8343;
+  }
+}
 .c-image__main, .c-image__main--right, .c-image__main--left {
   position: absolute;
   top: 0;
