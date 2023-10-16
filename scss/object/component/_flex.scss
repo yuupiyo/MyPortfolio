@@ -39,7 +39,8 @@
     justify-content: center;
     gap: g.rem(16);
   }
-  &__sass {
+  &__sass,
+  &__figma {
     align-self: center;
   }
 }

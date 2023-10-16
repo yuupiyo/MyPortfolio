@@ -63,7 +63,7 @@ img {
   justify-content: center;
   gap: 1rem;
 }
-.c-flex__sass {
+.c-flex__sass, .c-flex__figma {
   align-self: center;
 }
 
@@ -273,8 +273,21 @@ img {
   -webkit-animation: fluidrotate 30s ease 0s infinite;
           animation: fluidrotate 30s ease 0s infinite;
 }
+.c-image__skill--1 {
+  width: clamp(2rem, 1.538rem + 1.97vw, 3.313rem);
+}
+.c-image__skill--2 {
+  width: clamp(2.813rem, 2.328rem + 2.07vw, 4.188rem);
+}
+.c-image__sass {
+  width: clamp(2.75rem, 2.376rem + 1.6vw, 3.813rem);
+}
 .c-image__WordPress {
+  width: clamp(3.125rem, 2.619rem + 2.16vw, 4.563rem);
   margin: 0 auto;
+}
+.c-image__figma {
+  width: clamp(1.625rem, 1.295rem + 1.41vw, 2.563rem);
 }
 
 @-webkit-keyframes fluidrotate {

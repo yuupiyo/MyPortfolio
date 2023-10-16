@@ -31,8 +31,21 @@
       animation: fluidrotate 30s ease 0s infinite;
     }
   }
+  &__skill--1 {
+    width: clamp(2rem, 1.538rem + 1.97vw, 3.313rem);
+  }
+  &__skill--2 {
+    width: clamp(2.813rem, 2.328rem + 2.07vw, 4.188rem);
+  }
+  &__sass {
+    width: clamp(2.75rem, 2.376rem + 1.6vw, 3.813rem);
+  }
   &__WordPress {
+    width: clamp(3.125rem, 2.619rem + 2.16vw, 4.563rem);
     margin: 0 auto;
+  }
+  &__figma {
+    width: clamp(1.625rem, 1.295rem + 1.41vw, 2.563rem);
   }
 }
 
