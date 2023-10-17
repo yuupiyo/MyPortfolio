@@ -101,7 +101,10 @@ img {
   width: clamp(20.438rem, 17.692rem + 11.71vw, 27.063rem);
 }
 .c-card__skill {
-  padding: 2.5rem 2.5rem 4rem;
+  padding-top: 2.5rem;
+  padding-right: clamp(1rem, 0.648rem + 1.5vw, 2rem);
+  padding-left: clamp(1rem, 0.648rem + 1.5vw, 2rem);
+  padding-bottom: 4rem;
 }
 .c-card__works {
   height: clamp(22.125rem, 20.673rem + 6.2vw, 26.25rem);
@@ -346,7 +349,7 @@ img {
   font-size: clamp(3.125rem, 2.025rem + 4.69vw, 6.25rem);
 }
 .c-title__h2 {
-  font-size: 3.75rem;
+  font-size: clamp(2.5rem, 2.28rem + 0.94vw, 3.125rem);
   margin-bottom: 5rem;
 }
 .c-title__h3, .c-title__h3--works, .c-title__h3--about {
@@ -358,6 +361,7 @@ img {
   border-bottom: 2px solid #1B8343;
 }
 .c-title__h3--works {
+  font-size: clamp(1.563rem, 1.452rem + 0.47vw, 1.875rem);
   margin-bottom: 2rem;
 }
 .c-title__h3--contact {
@@ -373,7 +377,7 @@ img {
   text-align: left;
 }
 .c-text__skill {
-  margin-top: 2rem;
+  margin-top: clamp(1rem, 0.648rem + 1.5vw, 2rem);
 }
 .c-text__about {
   margin-bottom: 1.5rem;

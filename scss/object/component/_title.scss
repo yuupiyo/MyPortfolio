@@ -5,7 +5,7 @@
     font-size: clamp(3.125rem, 2.025rem + 4.69vw, 6.25rem);
   }
   &__h2 {
-    font-size: g.rem(60);
+    font-size: clamp(2.5rem, 2.28rem + 0.94vw, 3.125rem);
     margin-bottom: g.rem(80);
   }
   &__h3 {
@@ -18,6 +18,7 @@
     }
     &--works {
       @extend .c-title__h3;
+      font-size: clamp(1.563rem, 1.452rem + 0.47vw, 1.875rem);
       margin-bottom: g.rem(32);
     }
     &--contact {
