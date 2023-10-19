@@ -1,7 +1,10 @@
 @use "../../foundation/global" as g;
 
 //グラスモーフィズム部分(header部分に使用)
-.c-background--glass {
-  background:              rgba( 255,  255,  255, 0.3   );
-  backdrop-filter:         blur( 20px   );
-}
+.c-background{
+  &--glass {
+    background:rgba( 255,  255,  255, 0.3   );
+    backdrop-filter: blur( 20px   );
+  }
+  
+} 
