@@ -1,4 +1,4 @@
-const hamburger = document.querySelector('.c-button__hamburger');
+const hamburger = document.querySelector('.js-hamburger');
 const nav = document.querySelector('.p-nav');
 const circle = document.querySelector('.c-background__circle');
 const navLinks = document.querySelectorAll('.p-nav a');
