@@ -42,6 +42,7 @@
       left: g.rem(18);
       transform: translateY(g.rem(6)) rotate(-45deg);
       width: 45%;
+      z-index: 4;
     }
     &.is-active span:nth-of-type(2) {
       opacity: 0;
@@ -51,6 +52,7 @@
       left: g.rem(18);
       transform: translateY(g.rem(-6)) rotate(45deg);
       width: 45%;
+      z-index: 4;
     }
 
     @include g.pc {

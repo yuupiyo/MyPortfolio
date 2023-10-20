@@ -6,5 +6,19 @@
     background:rgba( 255,  255,  255, 0.3   );
     backdrop-filter: blur( 20px   );
   }
-  
+  &__circle {
+    position: fixed;
+    z-index: 3;
+    width: g.rem(100);
+    height: g.rem(100);
+    border-radius: 50%;
+    background: g.$color-yellow;
+    transform: scale(0);
+    right: g.rem(-50);
+    top: g.rem(-50);
+    transition: all .6s;
+    &.is-circleactive {
+      transform: scale(50);
+    }
+  }
 } 

@@ -96,6 +96,21 @@ img {
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
 }
+.c-background__circle {
+  position: fixed;
+  z-index: 3;
+  width: 6.25rem;
+  height: 6.25rem;
+  border-radius: 50%;
+  background: #E5D41C;
+  transform: scale(0);
+  right: -3.125rem;
+  top: -3.125rem;
+  transition: all 0.6s;
+}
+.c-background__circle.is-circleactive {
+  transform: scale(50);
+}
 
 .c-card, .c-card__works, .c-card__skill {
   width: clamp(20.438rem, 17.692rem + 11.71vw, 27.063rem);
@@ -461,6 +476,7 @@ img {
   left: 1.125rem;
   transform: translateY(0.375rem) rotate(-45deg);
   width: 45%;
+  z-index: 4;
 }
 .c-button__hamburger.is-active span:nth-of-type(2) {
   opacity: 0;
@@ -470,6 +486,7 @@ img {
   left: 1.125rem;
   transform: translateY(-0.375rem) rotate(45deg);
   width: 45%;
+  z-index: 4;
 }
 @media screen and (width >= 1120px) {
   .c-button__hamburger {
@@ -531,12 +548,59 @@ img {
   margin: 0 auto;
   display: none;
 }
+.p-nav.is-panelactive {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  width: 50%;
+  height: 100dvh;
+  display: block;
+}
+.p-nav ul {
+  opacity: 0;
+}
+@media screen and (width >= 1120px) {
+  .p-nav ul {
+    opacity: 1;
+  }
+}
+.p-nav.is-panelactive ul {
+  opacity: 1;
+}
+.p-nav.is-panelactive ul li {
+  -webkit-animation-name: naviAnime;
+          animation-name: naviAnime;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
 @media screen and (width >= 1120px) {
   .p-nav {
     display: block;
   }
 }
 
+@-webkit-keyframes naviAnime {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes naviAnime {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .u-pr55 {
   padding-right: 3.4375rem;
 }

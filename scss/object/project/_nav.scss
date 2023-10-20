@@ -5,7 +5,43 @@
   height: 100%;
   margin: 0 auto;
   display: none;
+
+  &.is-panelactive {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 50%;
+    height: 100dvh;
+    display: block;
+
+  }
+  & ul {
+    opacity: 0;
+    @include g.pc {
+      opacity: 1;
+    }
+  }
+  &.is-panelactive ul {
+    opacity: 1;
+  }
+  &.is-panelactive ul li {
+    animation-name: naviAnime;
+    animation-duration: 1s;
+    animation-delay: .2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+
   @include g.pc {
     display: block;
+  }
+}
+
+@keyframes naviAnime {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 1;
   }
 }
