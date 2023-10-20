@@ -4,6 +4,7 @@
   text-align: left;
   &__skill {
     @extend .c-text;
+    font-size: g.rem(16);
     margin-top: clamp(1rem, 0.648rem + 1.5vw, 2rem);
   }
   &__about {

@@ -35,6 +35,22 @@
       transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
   }
+  &__skill--1 {
+    width: clamp(2rem, 1.538rem + 1.97vw, 3.313rem);
+  }
+  &__skill--2 {
+    width: clamp(2.813rem, 2.328rem + 2.07vw, 4.188rem);
+  }
+  &__sass {
+    width: clamp(2.75rem, 2.376rem + 1.6vw, 3.813rem);
+  }
+  &__wordpress {
+    width: clamp(3.125rem, 2.619rem + 2.16vw, 4.563rem);
+    margin: 0 auto;
+  }
+  &__figma {
+    width: clamp(1.625rem, 1.295rem + 1.41vw, 2.563rem);
+  }
 }
 
 @media (hover: hover) {
