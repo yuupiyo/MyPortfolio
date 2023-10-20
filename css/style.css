@@ -422,6 +422,30 @@ img {
   background: linear-gradient(transparent 60%, #ff6 60%);
 }
 
+.c-title__h1 {
+  font-size: clamp(3.125rem, 2.025rem + 4.69vw, 6.25rem);
+}
+.c-title__h2 {
+  font-size: clamp(2.5rem, 2.28rem + 0.94vw, 3.125rem);
+  margin-bottom: 5rem;
+}
+.c-title__h3, .c-title__h3--works, .c-title__h3--about {
+  font-size: 1.875rem;
+}
+.c-title__h3--about {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #1B8343;
+}
+.c-title__h3--works {
+  font-size: clamp(1.563rem, 1.452rem + 0.47vw, 1.875rem);
+  margin-bottom: 2rem;
+}
+.c-title__h3--contact {
+  font-size: 1.25rem;
+  margin-bottom: 2.25rem;
+}
+
 .p-about__photo {
   width: clamp(20.438rem, 17.511rem + 12.49vw, 27.5rem);
   align-self: flex-end;
