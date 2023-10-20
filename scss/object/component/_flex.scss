@@ -19,7 +19,7 @@
       justify-content: space-between;
     }
   }
-  &__sns {
+  &__link {
     @extend .c-flex;
     flex-direction: row;
     justify-content: flex-end;

@@ -10,12 +10,6 @@
   }
   &__h3 {
     font-size: g.rem(30);
-    &--about {
-      @extend .c-title__h3;
-      display: inline-block;
-      margin-bottom: g.rem(24);
-      border-bottom: 2px solid g.$color-green;
-    }
     &--works {
       @extend .c-title__h3;
       font-size: clamp(1.563rem, 1.452rem + 0.47vw, 1.875rem);

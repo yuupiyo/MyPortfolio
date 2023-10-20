@@ -34,6 +34,9 @@ img {
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
 }
+.c-background__white {
+  background-color: #FFFFFF;
+}
 .c-background__circle {
   position: fixed;
   z-index: 3;
@@ -169,7 +172,7 @@ img {
   margin-right: auto;
 }
 
-.c-flex, .c-flex__icon, .c-flex__sns, .c-flex__nav {
+.c-flex, .c-flex__icon, .c-flex__link, .c-flex__nav {
   display: flex;
 }
 .c-flex__nav {
@@ -190,7 +193,7 @@ img {
     justify-content: space-between;
   }
 }
-.c-flex__sns {
+.c-flex__link {
   flex-direction: row;
   justify-content: flex-end;
   gap: 1rem;
@@ -248,7 +251,7 @@ img {
   flex-direction: column;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.c-icon__sns {
+.c-icon__link {
   width: clamp(2.25rem, 1.854rem + 1.69vw, 3.375rem);
 }
 .c-icon__name {
@@ -413,8 +416,53 @@ img {
   margin: 0 auto;
 }
 
+.c-photo {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+}
+.c-photo::before {
+  content: "";
+  width: clamp(18.438rem, 17.447rem + 4.23vw, 21.25rem);
+  height: clamp(15rem, 13.68rem + 5.63vw, 18.75rem);
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  background-color: #E5D41C;
+  z-index: -1;
+  -webkit-animation: fluidrotate 30s ease 0s infinite;
+          animation: fluidrotate 30s ease 0s infinite;
+}
+
+@keyframes fluidrotate {
+  0%, 100% {
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46%/50% 60% 40% 50%;
+  }
+  28% {
+    border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+  }
+  42% {
+    border-radius: 61% 39% 55% 45%/61% 39% 61% 39%;
+  }
+  56% {
+    border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+  }
+  70% {
+    border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+  }
+}
 .c-section {
   margin-bottom: 15rem;
+}
+
+.c-shadow {
+  box-shadow: 14px 14px 30px #bebebe;
 }
 
 .c-text, .c-text__skill {
@@ -438,13 +486,8 @@ img {
   font-size: clamp(2.5rem, 2.28rem + 0.94vw, 3.125rem);
   margin-bottom: 5rem;
 }
-.c-title__h3, .c-title__h3--works, .c-title__h3--about {
+.c-title__h3, .c-title__h3--works {
   font-size: 1.875rem;
-}
-.c-title__h3--about {
-  display: inline-block;
-  margin-bottom: 1.5rem;
-  border-bottom: 2px solid #1B8343;
 }
 .c-title__h3--works {
   font-size: clamp(1.563rem, 1.452rem + 0.47vw, 1.875rem);
@@ -467,8 +510,11 @@ img {
   text-align: left;
   padding: 1.25rem 1.5rem 1.5rem;
   border-radius: 20px;
-  background: #fff;
-  box-shadow: 14px 14px 30px #bebebe;
+}
+.p-about__h3 {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #1B8343;
 }
 
 .p-footer {

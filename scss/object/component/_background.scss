@@ -6,6 +6,9 @@
     background:rgba( 255,  255,  255, 0.3   );
     backdrop-filter: blur( 20px   );
   }
+  &__white {
+    background-color: g.$color-white;
+  }
   &__circle {
     position: fixed;
     z-index: 3;
