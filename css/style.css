@@ -18,6 +18,13 @@ img {
   display: block;
 }
 
+.l-header {
+  position: fixed;
+  width: 100vw;
+  height: 4.0625rem;
+  z-index: 1;
+}
+
 .l-main {
   padding-top: 10rem;
 }
@@ -514,13 +521,6 @@ img {
   .p-hamburger {
     display: none;
   }
-}
-
-.p-header {
-  position: fixed;
-  width: 100vw;
-  height: 4.0625rem;
-  z-index: 1;
 }
 
 .p-mainvisual {

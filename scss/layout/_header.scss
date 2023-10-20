@@ -1,6 +1,6 @@
-@use "../../foundation/global" as g;
+@use "../foundation/global" as g;
 
-.p-header {
+.l-header {
   position: fixed;
   width:    100vw;
   height:   g.rem(65);
