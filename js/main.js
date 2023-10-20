@@ -1,7 +1,7 @@
 const hamburger = document.querySelector('.js-hamburger');
-const nav = document.querySelector('.p-nav');
+const nav = document.querySelector('.js-nav');
 const circle = document.querySelector('.c-background__circle');
-const navLinks = document.querySelectorAll('.p-nav a');
+const navLinks = document.querySelectorAll('.js-nav a');
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('is-active');
