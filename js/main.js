@@ -1,6 +1,6 @@
 const hamburger = document.querySelector('.js-hamburger');
 const nav = document.querySelector('.js-nav');
-const circle = document.querySelector('.c-background__circle');
+const circle = document.querySelector('.js-circle');
 const navLinks = document.querySelectorAll('.js-nav a');
 
 hamburger.addEventListener('click', () => {

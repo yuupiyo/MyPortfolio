@@ -2,7 +2,7 @@
 
 //グラスモーフィズム部分(header部分に使用)
 .c-background{
-  &--glass {
+  &__glass {
     background:rgba( 255,  255,  255, 0.3   );
     backdrop-filter: blur( 20px   );
   }

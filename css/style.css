@@ -29,7 +29,7 @@ img {
   padding-top: 10rem;
 }
 
-.c-background--glass {
+.c-background__glass {
   background: rgba(255, 255, 255, 0.3);
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
@@ -171,9 +171,9 @@ img {
 
 .c-flex, .c-flex__icon, .c-flex__sns, .c-flex__nav {
   display: flex;
-  flex-direction: row;
 }
 .c-flex__nav {
+  flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   height: 100%;
@@ -191,6 +191,7 @@ img {
   }
 }
 .c-flex__sns {
+  flex-direction: row;
   justify-content: flex-end;
   gap: 1rem;
 }
@@ -207,6 +208,7 @@ img {
   }
 }
 .c-flex__icon {
+  flex-direction: row;
   justify-content: center;
   gap: 1rem;
 }
