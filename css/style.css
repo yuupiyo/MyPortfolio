@@ -180,6 +180,10 @@ img {
 .c-drop__center {
   display: inline-block;
   padding: 6.5625rem 2.8125rem;
+  transition: transform 0.3s ease-in-out;
+}
+.c-drop__center:hover {
+  transform: scale(1.1);
 }
 .c-drop__left {
   width: 6.25rem;
