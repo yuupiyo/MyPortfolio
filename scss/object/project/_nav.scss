@@ -3,15 +3,20 @@
 .p-nav {
   max-width: 1440px;
   height: 100%;
-  margin: 0 auto;
   display: none;
+  padding-right: 0;
+  @include g.pc {
+    display: block;
+    padding-right: g.rem(55);
+  }
 
   &.is-panelactive {
     position: fixed;
-    z-index: 999;
+    z-index: 998;
     top: 0;
-    width: 50%;
+    width: 100%;
     height: 100dvh;
+    margin: 0 auto;
     display: block;
 
   }
@@ -30,10 +35,6 @@
     animation-delay: .2s;
     animation-fill-mode: forwards;
     opacity: 0;
-  }
-
-  @include g.pc {
-    display: block;
   }
 }
 

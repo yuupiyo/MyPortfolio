@@ -4,11 +4,15 @@
   display:  flex;
   &__nav {
     @extend .c-flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     height: 100%;
     gap:    g.rem(35);
+    @include g.pc {
+      flex-direction: row;
+      justify-content: flex-end;
+    }
   }
   &__about {
     display: inline-flex;
