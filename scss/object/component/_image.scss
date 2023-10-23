@@ -1,17 +1,1 @@
 @use "../../foundation/global" as g;
-
-.c-image {
-  &__main {
-    position: absolute;
-    top: 0;
-    height: 100dvh;
-    &--left {
-      @extend .c-image__main;
-      left: g.rem(-742);
-    }
-    &--right {
-      @extend .c-image__main;
-      right: g.rem(-900);
-    }
-  }
-}

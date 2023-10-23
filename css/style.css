@@ -22,7 +22,7 @@ img {
   position: fixed;
   width: 100vw;
   height: 4.0625rem;
-  z-index: 1;
+  z-index: 990;
 }
 
 .l-main {
@@ -367,18 +367,6 @@ img {
     fill: #1B8343;
   }
 }
-.c-image__main, .c-image__main--right, .c-image__main--left {
-  position: absolute;
-  top: 0;
-  height: 100dvh;
-}
-.c-image__main--left {
-  left: -46.375rem;
-}
-.c-image__main--right {
-  right: -56.25rem;
-}
-
 .c-inner {
   width: clamp(20.438rem, 7.343rem + 55.87vw, 57.625rem);
   margin: 0 auto;
@@ -565,23 +553,29 @@ img {
 }
 
 .p-mainvisual {
-  width: 100vw;
-  height: 100dvh;
-}
-.p-mainvisual__title {
   max-width: 1440px;
-  height: 100%;
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
-  display: grid;
-  place-content: center;
-  position: relative;
 }
-.p-mainvisual__image {
-  width: 1440px;
-  position: absolute;
+.p-mainvisual__left {
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  max-width: 100%;
+  height: 100dvh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.p-mainvisual__right {
+  top: 0;
+  right: 0;
+  max-width: 100%;
+  height: 100dvh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-nav {
@@ -593,6 +587,7 @@ img {
 @media screen and (width >= 1120px) {
   .p-nav {
     display: block;
+    margin: 0 auto;
     padding-right: 3.4375rem;
   }
 }
