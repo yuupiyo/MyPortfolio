@@ -571,27 +571,28 @@ img {
   display: grid;
   place-content: center;
 }
-.p-mainvisual__left {
+.p-mainvisual__left, .p-mainvisual__right {
   position: absolute;
   top: 0;
-  left: -50%;
-  max-width: 1119px;
   width: 100%;
   height: 100%;
   overflow-x: visible;
   -o-object-fit: cover;
      object-fit: cover;
 }
+.p-mainvisual__left {
+  left: 0;
+  max-width: 1119px;
+  -o-object-position: right;
+     object-position: right;
+  transform: translateX(-80%);
+}
 .p-mainvisual__right {
-  position: absolute;
-  top: 0;
-  left: 50%;
+  right: 0;
   max-width: 1825px;
-  width: 100%;
-  height: 100%;
-  overflow-x: visible;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
+  transform: translateX(65%);
 }
 
 .p-nav {
