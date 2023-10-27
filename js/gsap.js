@@ -3,6 +3,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 const texts = document.querySelectorAll('.js-title span');
 const mainvisual = document.querySelector('.js-mainvisual');
+const mainLeft = document.querySelector('.js-mainvisualLeft');
+const mainRight = document.querySelector('.js-mainvisualRight');
 
 gsap.fromTo(texts, 
 {
@@ -23,3 +25,31 @@ gsap.fromTo(texts,
     scrub: true,
   },
 });
+gsap.fromTo(mainLeft, 
+  {
+    x: '-80%',
+  },
+  {
+    x: '-40%',
+    delay: 1,
+    scrollTrigger: {
+      trigger: mainvisual,
+      start: 'top top',
+      toggleActions: "play none reverse none",
+      scrub: true,
+    },
+  });
+  gsap.fromTo(mainRight, 
+    {
+      x: '65%',
+    },
+    {
+      x: '30%',
+      delay: 1,
+      scrollTrigger: {
+        trigger: mainvisual,
+        start: 'top top',
+        toggleActions: "play none reverse none",
+        scrub: true,
+      },
+    });

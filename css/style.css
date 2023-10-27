@@ -588,7 +588,6 @@ img {
   max-width: 1119px;
   -o-object-position: right;
      object-position: right;
-  transform: translateX(-80%);
 }
 .p-mainvisual__right {
   right: 0;
