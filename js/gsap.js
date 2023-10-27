@@ -1,7 +1,8 @@
 
-// gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
 const texts = document.querySelectorAll('.js-title span');
+const mainvisual = document.querySelector('.js-mainvisual');
 
 gsap.fromTo(texts, 
 {
@@ -13,6 +14,12 @@ gsap.fromTo(texts,
   autoAlpha: 0,
   stagger: 0.05,
   delay: 0.2,
-  duration: 0.5,
   ease: 'power1.out',
+  scrollTrigger: {
+    trigger: mainvisual,
+    start: 'top top',
+    end: 'bottom center',
+    toggleActions: "play none reverse none",
+    scrub: true,
+  },
 });
