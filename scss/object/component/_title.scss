@@ -3,6 +3,9 @@
 .c-title {
   &__h1 {
     font-size: clamp(3.125rem, 2.025rem + 4.69vw, 6.25rem);
+    & span {
+      display: inline-block;
+    }
   }
   &__h2 {
     font-size: clamp(2.5rem, 2.28rem + 0.94vw, 3.125rem);

@@ -12,9 +12,8 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script src="./js/gsap.js" defer></script>
   <script src="./js/main.js" defer></script>
+  <script src="./js/gsap.js" defer></script>
 </head>
 <body>
   <header class="l-header c-background__glass">
@@ -36,9 +35,13 @@
   </header>
 
   <div class="l-container">
-    <div class="p-mainvisual">
+    <div class="p-mainvisual js-mainvisual">
       <div class="p-mainvisual__title">
-        <h1 class="p-mainvisual__center c-font-family__en c-font-color__brown c-title__h1">Yukari Hiyoshi<br>Portfolio</h1>
+        <h1 class="p-mainvisual__center c-font-family__en c-font-color__brown c-title__h1 js-title">
+          <span>Y</span><span>u</span><span>k</span><span>a</span><span>r</span><span>i</span><span> </span><span>H</span><span>i</span><span>y</span><span>o</span><span>s</span><span>h</span><span>i</span>
+          <br>
+          <span>P</span><span>o</span><span>r</span><span>t</span><span>f</span><span>o</span><span>l</span><span>i</span><span>o</span>
+        </h1>
       </div>
       <picture>
         <source srcset="./images/leaf-left.webp" type="image/webp">
@@ -205,5 +208,9 @@
   <footer class="p-footer">
     <p class="c-font-family__en c-font-color__white"><small>©︎2023 Yukari Hiyoshi</small></p>
   </footer>
+
+  
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script> -->
+  
 </body>
 </html>

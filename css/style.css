@@ -469,6 +469,9 @@ img {
 .c-title__h1 {
   font-size: clamp(3.125rem, 2.025rem + 4.69vw, 6.25rem);
 }
+.c-title__h1 span {
+  display: inline-block;
+}
 .c-title__h2 {
   font-size: clamp(2.5rem, 2.28rem + 0.94vw, 3.125rem);
   margin-bottom: 5rem;
