@@ -14,4 +14,10 @@
     font-size: g.rem(18);
     background:linear-gradient(transparent 60%, #ff6 60%);
   }
+  &__contact {
+    font-size: 4vw;
+      @include g.sp {
+        font-size: g.rem(16);
+      }
+  }
 }

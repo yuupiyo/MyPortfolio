@@ -2,8 +2,16 @@
 
 //メディアクエリの設定
 //ブレイクポイント
+$sp:     375px;
 $tablet: 800px;
 $pc:     1120px;
+
+//タブレットサイズ以上しかスタイリングしない時に使う
+@mixin sp {
+  @media screen and (width >= $sp) {
+    @content;
+  }
+}
 
 //タブレットサイズ以上しかスタイリングしない時に使う
 @mixin tablet {
