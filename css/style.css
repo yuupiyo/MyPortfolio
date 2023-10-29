@@ -107,10 +107,14 @@ img {
   width: clamp(20.438rem, 17.692rem + 11.71vw, 27.063rem);
 }
 .c-card__skill {
-  padding-top: 2.5rem;
-  padding-right: clamp(1rem, 0.648rem + 1.5vw, 2rem);
-  padding-left: clamp(1rem, 0.648rem + 1.5vw, 2rem);
-  padding-bottom: 4rem;
+  max-width: 433px;
+  width: 88%;
+  padding: 2.5rem 3.5% 4rem;
+}
+@media screen and (width >= 768px) {
+  .c-card__skill {
+    width: 45%;
+  }
 }
 .c-card__works {
   height: clamp(22.125rem, 20.673rem + 6.2vw, 26.25rem);
@@ -245,12 +249,14 @@ img {
   display: inline-flex;
   flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
   gap: 2.5rem;
 }
-@media screen and (width >= 1415px) {
+@media screen and (width >= 768px) {
   .c-flex__section {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: stretch;
   }
 }
 .c-flex__icon {

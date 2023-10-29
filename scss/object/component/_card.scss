@@ -4,12 +4,12 @@
   width: clamp(20.438rem, 17.692rem + 11.71vw, 27.063rem);
   &__skill {
     @extend .c-card;
-    padding-top: g.rem(40);
-    padding-right: clamp(1rem, 0.648rem + 1.5vw, 2rem);
-    padding-left: clamp(1rem, 0.648rem + 1.5vw, 2rem);
-    padding-bottom: g.rem(64);
-    // padding: g.rem(40) g.rem(40) g.rem(64);
-    // padding-bottom: g.rem(64);
+    max-width: 433px;
+    width: 88%;
+    padding: g.rem(40) 3.5% g.rem(64);
+    @include g.tablet {
+      width: 45%;
+    }
   }
   &__works {
     @extend .c-card;
