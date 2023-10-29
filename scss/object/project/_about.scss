@@ -13,12 +13,12 @@
     width: clamp(20.438rem, 17.511rem + 12.49vw, 27.5rem);
     text-align: left;
     padding: g.rem(20) g.rem(24) g.rem(24);
-    border-radius: 20px;
+    border-radius: g.rem(20);
     
   }
   &__h3 {
     display: inline-block;
     margin-bottom: g.rem(24);
-    border-bottom: 2px solid g.$color-green;
+    border-bottom: g.rem(2) solid g.$color-green;
   }
 }
