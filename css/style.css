@@ -109,7 +109,7 @@ img {
 .c-card__skill {
   max-width: 433px;
   width: 88%;
-  padding: 2.5rem 3.5% 4rem;
+  padding: 2.5rem 3.5% 4rem 4.5%;
 }
 @media screen and (width >= 768px) {
   .c-card__skill {
@@ -467,8 +467,13 @@ img {
   text-align: left;
 }
 .c-text__skill {
-  font-size: 1rem;
+  font-size: 4.2666666667vw;
   margin-top: clamp(1rem, 0.648rem + 1.5vw, 2rem);
+}
+@media screen and (width >= 375px) {
+  .c-text__skill {
+    font-size: 1rem;
+  }
 }
 .c-text__about {
   margin-bottom: 1.5rem;
@@ -685,5 +690,14 @@ img {
 }
 .u-pr55 {
   padding-right: 3.4375rem;
+}
+
+.u-pb__sp {
+  padding-bottom: 6.875rem;
+}
+@media screen and (width >= 768px) {
+  .u-pb__sp {
+    padding-bottom: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

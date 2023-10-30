@@ -3,3 +3,10 @@
 .u-pr55 {
   padding-right: g.rem(55);
 }
+
+.u-pb__sp {
+  padding-bottom: g.rem(110);
+  @include g.tablet {
+    padding-bottom: 0;
+  }
+}

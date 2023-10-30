@@ -6,7 +6,7 @@
     @extend .c-card;
     max-width: 433px;
     width: 88%;
-    padding: g.rem(40) 3.5% g.rem(64);
+    padding: g.rem(40) 3.5% g.rem(64) 4.5%;
     @include g.tablet {
       width: 45%;
     }

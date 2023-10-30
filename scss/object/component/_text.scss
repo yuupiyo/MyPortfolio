@@ -4,8 +4,11 @@
   text-align: left;
   &__skill {
     @extend .c-text;
-    font-size: g.rem(16);
+    font-size: g.sp-vw(16);
     margin-top: clamp(1rem, 0.648rem + 1.5vw, 2rem);
+    @include g.sp {
+      font-size: g.rem(16);
+    }
   }
   &__about {
     margin-bottom: g.rem(24);
