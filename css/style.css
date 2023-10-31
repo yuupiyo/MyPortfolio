@@ -101,10 +101,21 @@ img {
   margin-left: auto;
   margin-top: 0.5rem;
   padding: 0.5rem 2.1875rem;
+  font-size: 4vw;
+}
+@media screen and (width >= 375px) {
+  .c-button__works {
+    font-size: 1rem;
+  }
 }
 
 .c-card, .c-card__works, .c-card__skill {
-  width: clamp(20.438rem, 17.692rem + 11.71vw, 27.063rem);
+  width: clamp(11.825rem, 88vw, 23.815rem);
+}
+@media screen and (width >= 768px) {
+  .c-card, .c-card__works, .c-card__skill {
+    width: clamp(21.599rem, -0.253rem + 45.53vw, 27.063rem);
+  }
 }
 .c-card__skill {
   max-width: 433px;
@@ -117,8 +128,13 @@ img {
   }
 }
 .c-card__works {
-  height: clamp(22.125rem, 20.673rem + 6.2vw, 26.25rem);
+  height: clamp(16.875rem, 7.013rem + 73.39vw, 26.875rem);
   perspective: 1000px;
+}
+@media screen and (width >= 768px) {
+  .c-card__works {
+    height: clamp(24.259rem, 17.384rem + 14.36vw, 26rem);
+  }
 }
 .c-card__inner {
   display: inline-block;
@@ -135,9 +151,14 @@ img {
   height: 100%;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  padding: 2.5rem;
+  padding: 2.5rem 3% 0 5%;
   border-radius: 1.25rem;
   transform: rotateY(0deg);
+}
+@media screen and (width >= 768px) {
+  .c-card__front {
+    padding: 2.5rem;
+  }
 }
 .c-card__back {
   position: absolute;
@@ -147,10 +168,16 @@ img {
           backface-visibility: hidden;
   display: grid;
   place-content: center;
-  padding: 2.5rem;
+  padding: 0 10%;
   background-color: #fff;
   border-radius: 1.25rem;
   transform: rotateY(180deg);
+  font-size: 4.2666666667vw;
+}
+@media screen and (width >= 375px) {
+  .c-card__back {
+    font-size: 1rem;
+  }
 }
 
 @media (hover: hover) {
@@ -505,8 +532,14 @@ img {
   font-size: 1.875rem;
 }
 .c-title__h3--works {
-  font-size: clamp(1.563rem, 1.452rem + 0.47vw, 1.875rem);
-  margin-bottom: 2rem;
+  font-size: 8vw;
+  margin-bottom: 1rem;
+}
+@media screen and (width >= 375px) {
+  .c-title__h3--works {
+    font-size: 1.875rem;
+    margin-bottom: 2rem;
+  }
 }
 .c-title__h3--contact {
   font-size: 4vw;

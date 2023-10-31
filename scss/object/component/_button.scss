@@ -11,6 +11,10 @@
     margin-left: auto;
     margin-top: g.rem(8);
     padding: g.rem(8) g.rem(35);
+    font-size: 4vw;
+    @include g.sp {
+      font-size: g.rem(16);
+    }
   }
   
   
