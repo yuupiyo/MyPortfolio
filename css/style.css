@@ -250,7 +250,7 @@ img {
   height: 100%;
   gap: 2.1875rem;
 }
-@media screen and (width >= 1120px) {
+@media screen and (width >= 768px) {
   .c-flex__nav {
     flex-direction: row;
     justify-content: flex-end;
@@ -617,7 +617,7 @@ img {
   width: 45%;
   z-index: 999;
 }
-@media screen and (width >= 1120px) {
+@media screen and (width >= 768px) {
   .p-hamburger {
     display: none;
   }
@@ -665,7 +665,7 @@ img {
   display: none;
   padding-right: 0;
 }
-@media screen and (width >= 1120px) {
+@media screen and (width >= 768px) {
   .p-nav {
     display: block;
     margin: 0 auto;
@@ -684,7 +684,7 @@ img {
 .p-nav ul {
   opacity: 0;
 }
-@media screen and (width >= 1120px) {
+@media screen and (width >= 768px) {
   .p-nav ul {
     opacity: 1;
   }

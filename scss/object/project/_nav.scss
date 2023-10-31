@@ -5,7 +5,7 @@
   height: 100%;
   display: none;
   padding-right: 0;
-  @include g.pc {
+  @include g.tablet {
     display: block;
     margin: 0 auto;
     padding-right: g.rem(55);
@@ -23,7 +23,7 @@
   }
   & ul {
     opacity: 0;
-    @include g.pc {
+    @include g.tablet {
       opacity: 1;
     }
   }

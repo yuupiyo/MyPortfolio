@@ -9,7 +9,7 @@
     align-items: center;
     height: 100%;
     gap:    g.rem(35);
-    @include g.pc {
+    @include g.tablet {
       flex-direction: row;
       justify-content: flex-end;
     }

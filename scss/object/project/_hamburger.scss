@@ -43,7 +43,7 @@
     z-index: 999;
   }
 
-  @include g.pc {
+  @include g.tablet {
     display: none;
   }
 }
