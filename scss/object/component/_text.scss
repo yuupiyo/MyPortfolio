@@ -11,11 +11,18 @@
     }
   }
   &__about {
+    font-size: g.sp-vw(16);
     margin-bottom: g.rem(24);
+    @include g.sp {
+      font-size: g.rem(16);
+    }
   }
   &__buildup {
-    font-size: g.rem(18);
+    font-size: g.sp-vw(18);
     background:linear-gradient(transparent 60%, #ff6 60%);
+    @include g.sp {
+      font-size: g.rem(18);
+    }
   }
   &__contact {
     font-size: 4vw;

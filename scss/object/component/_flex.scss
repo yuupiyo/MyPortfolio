@@ -15,12 +15,14 @@
     }
   }
   &__about {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
+    align-items: center;
     gap: g.rem(32);
-    @include g.pc {
+    @include g.tablet {
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: center;
+      gap: 12.5%;
     }
   }
   &__link {

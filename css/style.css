@@ -257,14 +257,16 @@ img {
   }
 }
 .c-flex__about {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2rem;
 }
-@media screen and (width >= 1120px) {
+@media screen and (width >= 768px) {
   .c-flex__about {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 12.5%;
   }
 }
 .c-flex__link {
@@ -424,15 +426,32 @@ img {
 }
 .c-photo::before {
   content: "";
-  width: clamp(18.438rem, 17.447rem + 4.23vw, 21.25rem);
-  height: clamp(15rem, 13.68rem + 5.63vw, 18.75rem);
+  max-width: 433px;
+  width: 100%;
+  height: 70%;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: absolute;
   bottom: 0;
-  left: 10%;
+  left: 0;
   background-color: #E5D41C;
   z-index: -1;
   -webkit-animation: fluidrotate 30s ease 0s infinite;
           animation: fluidrotate 30s ease 0s infinite;
+}
+@media screen and (width >= 375px) {
+  .c-photo::before {
+    width: 90%;
+    height: 70%;
+    left: 5%;
+  }
+}
+@media screen and (width >= 768px) {
+  .c-photo::before {
+    width: 100%;
+    height: 70%;
+    left: 0;
+  }
 }
 
 @-webkit-keyframes fluidrotate {
@@ -503,11 +522,22 @@ img {
   }
 }
 .c-text__about {
+  font-size: 4.2666666667vw;
   margin-bottom: 1.5rem;
 }
+@media screen and (width >= 375px) {
+  .c-text__about {
+    font-size: 1rem;
+  }
+}
 .c-text__buildup {
-  font-size: 1.125rem;
+  font-size: 4.8vw;
   background: linear-gradient(transparent 60%, #ff6 60%);
+}
+@media screen and (width >= 375px) {
+  .c-text__buildup {
+    font-size: 1.125rem;
+  }
 }
 .c-text__contact {
   font-size: 4vw;
@@ -529,7 +559,12 @@ img {
   margin-bottom: 5rem;
 }
 .c-title__h3, .c-title__h3--works {
-  font-size: 1.875rem;
+  font-size: 8vw;
+}
+@media screen and (width >= 375px) {
+  .c-title__h3, .c-title__h3--works {
+    font-size: 1.875rem;
+  }
 }
 .c-title__h3--works {
   font-size: 8vw;
@@ -551,17 +586,30 @@ img {
 }
 
 .p-about__photo {
-  width: clamp(20.438rem, 17.511rem + 12.49vw, 27.5rem);
-  align-self: flex-end;
+  max-width: 440px;
+  width: 87.2%;
+  align-self: center;
+}
+@media screen and (width >= 768px) {
+  .p-about__photo {
+    width: 35.1%;
+  }
 }
 .p-about__photo img {
   margin: 0 auto;
 }
 .p-about__info {
-  width: clamp(20.438rem, 17.511rem + 12.49vw, 27.5rem);
+  max-width: 440px;
+  width: 87.2%;
   text-align: left;
-  padding: 1.25rem 1.5rem 1.5rem;
+  padding: 4.8% 7.3%;
   border-radius: 1.25rem;
+}
+@media screen and (width >= 768px) {
+  .p-about__info {
+    width: 45.8%;
+    padding: 4% 4.5%;
+  }
 }
 .p-about__h3 {
   display: inline-block;

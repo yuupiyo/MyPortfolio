@@ -12,7 +12,10 @@
     margin-bottom: g.rem(80);
   }
   &__h3 {
-    font-size: g.rem(30);
+    font-size: g.sp-vw(30);
+    @include g.sp {
+      font-size: g.rem(30);
+    }
     &--works {
       @extend .c-title__h3;
       font-size: g.sp-vw(30);
