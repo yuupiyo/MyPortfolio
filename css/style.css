@@ -43,6 +43,9 @@ img {
 .c-background__white {
   background-color: #FFFFFF;
 }
+.c-background__brown {
+  background-color: #3A291C;
+}
 .c-background__circle {
   position: fixed;
   z-index: 3;
@@ -240,11 +243,16 @@ img {
   margin-right: 86%;
 }
 
-.c-flex, .c-flex__icon, .c-flex__link, .c-flex__nav {
+.c-flex, .c-flex__about, .c-flex__nav {
   display: flex;
+  flex-direction: column;
+}
+@media screen and (width >= 768px) {
+  .c-flex, .c-flex__about, .c-flex__nav {
+    flex-direction: row;
+  }
 }
 .c-flex__nav {
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -252,24 +260,21 @@ img {
 }
 @media screen and (width >= 768px) {
   .c-flex__nav {
-    flex-direction: row;
     justify-content: flex-end;
   }
 }
 .c-flex__about {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 2rem;
 }
 @media screen and (width >= 768px) {
   .c-flex__about {
-    flex-direction: row;
     justify-content: center;
     gap: 12.5%;
   }
 }
 .c-flex__link {
+  display: flex;
   flex-direction: row;
   justify-content: flex-end;
   gap: 1rem;
@@ -289,6 +294,7 @@ img {
   }
 }
 .c-flex__icon {
+  display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 5.5%;
@@ -637,7 +643,6 @@ img {
   left: 0.875rem;
   height: 0.1875rem;
   width: 60%;
-  background: #3A291C;
 }
 .p-hamburger span:nth-of-type(1) {
   top: 30%;

@@ -2,31 +2,31 @@
 
 .c-flex {
   display:  flex;
+  flex-direction: column;
+  @include g.tablet {
+    flex-direction: row;
+  }
   &__nav {
     @extend .c-flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
     gap:    g.rem(35);
     @include g.tablet {
-      flex-direction: row;
       justify-content: flex-end;
     }
   }
   &__about {
-    display: flex;
-    flex-direction: column;
+    @extend .c-flex;
     align-items: center;
     gap: g.rem(32);
     @include g.tablet {
-      flex-direction: row;
       justify-content: center;
       gap: 12.5%;
     }
   }
   &__link {
-    @extend .c-flex;
+    display: flex;
     flex-direction: row;
     justify-content: flex-end;
     gap: g.rem(16);
@@ -44,7 +44,7 @@
     }
   }
   &__icon {
-    @extend .c-flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 5.5%;
