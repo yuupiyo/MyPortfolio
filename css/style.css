@@ -193,6 +193,10 @@ img {
     transform: rotateY(180deg);
   }
 }
+.c-color__brown {
+  color: #3A291C;
+}
+
 .c-drop, .c-drop__left, .c-drop__center, .c-drop__right {
   position: relative;
   border-radius: 50%;

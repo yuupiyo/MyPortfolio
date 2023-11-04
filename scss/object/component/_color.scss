@@ -1,0 +1,7 @@
+@use "../../foundation/global" as g;
+
+.c-color {
+  &__brown {
+    color: g.$color-brown;
+  }
+}
