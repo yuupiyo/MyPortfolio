@@ -558,12 +558,6 @@ img {
   }
 }
 
-.c-title__h1 {
-  font-size: 7.8125vw;
-}
-.c-title__h1 span {
-  display: inline-block;
-}
 .c-title__h2 {
   font-size: clamp(2.5rem, 2.28rem + 0.94vw, 3.125rem);
   margin-bottom: 5rem;
@@ -687,7 +681,7 @@ img {
   position: relative;
   margin: 0 auto;
 }
-.p-mainvisual__title {
+.p-mainvisual__center {
   width: 100%;
   height: 100%;
   display: grid;
@@ -713,7 +707,12 @@ img {
   max-width: 1825px;
   -o-object-position: left;
      object-position: left;
-  transform: translateX(65%);
+}
+.p-mainvisual__title {
+  font-size: 7.8125vw;
+}
+.p-mainvisual__title span {
+  display: inline-block;
 }
 
 .p-nav {
