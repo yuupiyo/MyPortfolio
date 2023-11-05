@@ -8,7 +8,6 @@ body {
   width: 100vw;
   overflow-x: hidden;
   background-color: #fff;
-  text-align: center;
 }
 
 img {
@@ -560,6 +559,7 @@ img {
 
 .c-title__h2 {
   font-size: clamp(2.5rem, 2.28rem + 0.94vw, 3.125rem);
+  text-align: center;
   margin-bottom: 5rem;
 }
 .c-title__h3, .c-title__h3--works {
@@ -572,6 +572,7 @@ img {
 }
 .c-title__h3--works {
   font-size: 8vw;
+  text-align: center;
   margin-bottom: 1rem;
 }
 @media screen and (width >= 375px) {
@@ -589,10 +590,15 @@ img {
   }
 }
 
+.p-about {
+  margin-bottom: 15rem;
+}
+.p-about__title {
+  margin-bottom: 5rem;
+}
 .p-about__photo {
   max-width: 440px;
   width: 87.2%;
-  align-self: center;
 }
 @media screen and (width >= 768px) {
   .p-about__photo {
@@ -605,7 +611,6 @@ img {
 .p-about__info {
   max-width: 440px;
   width: 87.2%;
-  text-align: left;
   padding: 4.8% 7.3%;
   border-radius: 1.25rem;
 }
@@ -624,6 +629,9 @@ img {
 .p-footer {
   padding: 2.8125rem 0;
   background: #3A291C;
+}
+.p-footer__text {
+  text-align: center;
 }
 
 .p-hamburger {
@@ -710,6 +718,7 @@ img {
 }
 .p-mainvisual__title {
   font-size: 7.8125vw;
+  text-align: center;
 }
 .p-mainvisual__title span {
   display: inline-block;
