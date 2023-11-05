@@ -29,4 +29,7 @@
   &__figma {
     width: 11.7%;
   }
+  &__text {
+    margin-top: clamp(1rem, 0.648rem + 1.5vw, 2rem);
+  }
 }

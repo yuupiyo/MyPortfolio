@@ -374,20 +374,11 @@ img {
   box-shadow: 14px 14px 30px #bebebe;
 }
 
-.c-text, .c-text__skill {
+.c-text {
   font-size: 4.2666666667vw;
 }
 @media screen and (width >= 375px) {
-  .c-text, .c-text__skill {
-    font-size: 1rem;
-  }
-}
-.c-text__skill {
-  font-size: 4.2666666667vw;
-  margin-top: clamp(1rem, 0.648rem + 1.5vw, 2rem);
-}
-@media screen and (width >= 375px) {
-  .c-text__skill {
+  .c-text {
     font-size: 1rem;
   }
 }
@@ -671,6 +662,9 @@ img {
 }
 .p-skill__figma {
   width: 11.7%;
+}
+.p-skill__text {
+  margin-top: clamp(1rem, 0.648rem + 1.5vw, 2rem);
 }
 
 .u-animation {
