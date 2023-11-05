@@ -1,5 +1,6 @@
 @use "../../foundation/global" as g;
 
+// aboutのSVGアニメーション
 @media (hover: hover) {
   .u-hover__popup:hover .c-icon__name {
     top: g.rem(-45);

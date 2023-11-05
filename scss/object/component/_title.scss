@@ -1,7 +1,6 @@
 @use "../../foundation/global" as g;
 
-.c-title {
-  
+.c-title {  
   &__h2 {
     font-size: clamp(2.5rem, 2.28rem + 0.94vw, 3.125rem);
     text-align: center;
@@ -14,11 +13,9 @@
     }
     &--works {
       @extend .c-title__h3;
-      font-size: g.sp-vw(30);
       text-align: center;
       margin-bottom: g.rem(16);
       @include g.sp {
-        font-size: g.rem(30);
         margin-bottom: g.rem(32);
       }
     }

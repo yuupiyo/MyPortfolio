@@ -32,6 +32,10 @@
   }
 }
 
+.c-border-bottom {
+  border-bottom: g.rem(2) solid g.$color-green;
+}
+
 .c-border-radius {
   border-radius: g.rem(20);
 }

@@ -5,15 +5,6 @@
   @include g.tablet {
     width: clamp(21.599rem, -0.253rem + 45.53vw, 27.063rem);
   }
-  &__skill {
-    @extend .c-card;
-    max-width: 433px;
-    width: 88%;
-    padding: g.rem(40) 3.5% g.rem(64) 4.5%;
-    @include g.tablet {
-      width: 45%;
-    }
-  }
   &__works {
     @extend .c-card;
     height: clamp(16.875rem, 7.013rem + 73.39vw, 26.875rem);

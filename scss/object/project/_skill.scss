@@ -1,0 +1,32 @@
+@use "../../foundation/global" as g;
+
+.p-skill {
+  margin-bottom: g.rem(240);
+  &__title {
+    margin-bottom: g.rem(80);
+  }
+  &__card {
+    max-width: 433px;
+    width: 88%;
+    padding: g.rem(40) 3.5% g.rem(64) 4.5%;
+    @include g.tablet {
+      width: 45%;
+    }
+  }
+  &__icon01 {
+    width: 15.1%;
+  }
+  &__icon02 {
+    width: 19.1%;
+  }
+  &__sass {
+    width: 17.4%;
+  }
+  &__wordpress {
+    width: 20.8%;
+    margin: 0 auto;
+  }
+  &__figma {
+    width: 11.7%;
+  }
+}

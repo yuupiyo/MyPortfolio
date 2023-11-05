@@ -25,7 +25,7 @@
       gap: 12.5%;
     }
   }
-  &__list {
+  &__about-icon {
     @extend .c-flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -43,8 +43,8 @@
       align-items: stretch;
     }
   }
-  &__icon {
-    display: flex;
+  &__skill-icon {
+    @extend .c-flex;
     flex-direction: row;
     justify-content: center;
     gap: 5.5%;
