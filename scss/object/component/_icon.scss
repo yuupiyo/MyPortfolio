@@ -7,15 +7,10 @@
   align-items: center;
   flex-direction: column;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  &__link {
-    width: clamp(2.25rem, 1.854rem + 1.69vw, 3.375rem);
-  }
   &__name {
     position: absolute;
     top: 0;
     font-size: g.rem(14);
-    background: #fff;
-    color: #fff;
     padding: g.rem(5) g.rem(8);
     border-radius: g.rem(5);
     box-shadow: 0 g.rem(10) g.rem(10) rgba(0, 0, 0, 0.1);
@@ -53,43 +48,3 @@
   }
 }
 
-@media (hover: hover) {
-  .c-icon:hover .c-icon__name {
-    top: g.rem(-45);
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-    text-shadow: 0px g.rem(-1) 0px rgba(0, 0, 0, 0.1);
-  }
-  .c-icon:hover .c-icon__name,
-  .c-icon:hover .c-icon__name::before {
-    background: g.$color-green;
-    color: g.$color-white;
-  }
-  .c-icon:hover .c-icon__codepen {
-    stroke: g.$color-green;
-  }
-  .c-icon:hover .c-icon__github {
-    fill: g.$color-green;
-  }
-  }
-  @media (hover: none) {
-    .c-icon:active .c-icon__name {
-      top: g.rem(-45);
-      opacity: 1;
-      visibility: visible;
-      pointer-events: auto;
-      text-shadow: 0px g.rem(-1) 0px rgba(0, 0, 0, 0.1);
-    }
-    .c-icon:active .c-icon__name,
-    .c-icon:active .c-icon__name::before {
-      background: g.$color-green;
-      color: g.$color-white;
-    }
-    .c-icon:active .c-icon__codepen {
-      stroke: g.$color-green;
-    }
-    .c-icon:active .c-icon__github {
-      fill: g.$color-green;
-    }
-  }

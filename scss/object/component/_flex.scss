@@ -25,11 +25,11 @@
       gap: 12.5%;
     }
   }
-  &__link {
-    display: flex;
+  &__list {
+    @extend .c-flex;
     flex-direction: row;
     justify-content: flex-end;
-    gap: g.rem(16);
+    gap: 5.5%;
   }
   &__section {
     display: inline-flex;

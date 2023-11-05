@@ -1,27 +1,16 @@
 @use "../../foundation/global" as g;
 
 .c-text {
-  text-align: left;
+  font-size: g.sp-vw(16);
+  @include g.sp {
+    font-size: g.rem(16);
+  }
   &__skill {
     @extend .c-text;
     font-size: g.sp-vw(16);
     margin-top: clamp(1rem, 0.648rem + 1.5vw, 2rem);
     @include g.sp {
       font-size: g.rem(16);
-    }
-  }
-  &__about {
-    font-size: g.sp-vw(16);
-    margin-bottom: g.rem(24);
-    @include g.sp {
-      font-size: g.rem(16);
-    }
-  }
-  &__buildup {
-    font-size: g.sp-vw(18);
-    background:linear-gradient(transparent 60%, #ff6 60%);
-    @include g.sp {
-      font-size: g.rem(18);
     }
   }
   &__contact {
