@@ -6,6 +6,7 @@ const mainvisual = document.querySelector('.js-mainvisual');
 const mainLeft = document.querySelector('.js-mainvisualLeft');
 const mainRight = document.querySelector('.js-mainvisualRight');
 
+// mainvisual
 gsap.fromTo(texts, 
 {
   y: 0,
@@ -15,7 +16,6 @@ gsap.fromTo(texts,
   y: 25,
   autoAlpha: 0,
   stagger: 0.05,
-  delay: 0.2,
   ease: 'power1.out',
   scrollTrigger: {
     trigger: mainvisual,
@@ -27,11 +27,11 @@ gsap.fromTo(texts,
 });
 gsap.fromTo(mainLeft, 
   {
-    x: '-80%',
+    xPercent: -80,
   },
   {
-    x: '-40%',
-    delay: 1,
+    xPercent: -40,
+    delay: 0.5,
     scrollTrigger: {
       trigger: mainvisual,
       start: 'top top',
@@ -41,15 +41,36 @@ gsap.fromTo(mainLeft,
   });
   gsap.fromTo(mainRight, 
     {
-      x: '65%',
+      xPercent: 65,
     },
     {
-      x: '30%',
-      delay: 1,
+      xPercent: 30,
+      delay: 0.5,
       scrollTrigger: {
         trigger: mainvisual,
         start: 'top top',
         toggleActions: "play none reverse none",
         scrub: true,
       },
+    });
+
+    // fadein
+    const fadeinItems =document.querySelectorAll('.js-fadein');
+
+    fadeinItems.forEach((fadeinItem) => {
+      gsap.fromTo(fadeinItem, 
+        {
+          y: 150,
+          autoAlpha: 0,
+        },
+        {
+          y: 0,
+          autoAlpha: 1,
+          scrollTrigger: {
+            trigger: fadeinItem,
+            start: 'top bottom',
+            end: 'top center',
+            scrub: true,
+          },
+        });
     });
