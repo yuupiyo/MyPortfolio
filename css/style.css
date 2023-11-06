@@ -144,34 +144,12 @@ img {
 }
 .c-drop__right {
   border-radius: 30% 70% 36% 64%/60% 36% 64% 40%;
-  max-width: 80px;
-  width: 11%;
-  margin-left: 83%;
 }
 .c-drop__center {
   border-radius: 54% 46% 54% 46%/37% 60% 40% 63%;
-  max-width: 354px;
-  width: 85%;
-  display: grid;
-  place-content: center;
-  gap: 10%;
-  margin: 0 auto;
-}
-@media (hover: hover) {
-  .c-drop__center:hover {
-    border-radius: 50%;
-  }
-}
-@media (hover: none) {
-  .c-drop__center:active {
-    border-radius: 50%;
-  }
 }
 .c-drop__left {
   border-radius: 49% 51% 47% 53%/60% 37% 63% 40%;
-  max-width: 100px;
-  width: 8%;
-  margin-right: 86%;
 }
 
 .c-flex, .c-flex__skill-icon, .c-flex__about-icon, .c-flex__about, .c-flex__nav {
@@ -293,10 +271,6 @@ img {
   margin: 0 auto;
 }
 
-.c-section {
-  margin-bottom: 15rem;
-}
-
 .c-shadow {
   box-shadow: 14px 14px 30px #bebebe;
 }
@@ -313,15 +287,6 @@ img {
 .c-title__h2 {
   font-size: clamp(2.5rem, 2.28rem + 0.94vw, 3.125rem);
   text-align: center;
-  margin-bottom: 5rem;
-}
-.c-title__h3--contact {
-  font-size: 4vw;
-}
-@media screen and (width >= 375px) {
-  .c-title__h3--contact {
-    font-size: 1.25rem;
-  }
 }
 
 .p-about {
@@ -371,6 +336,39 @@ img {
 }
 .p-about__icon {
   width: clamp(2.25rem, 1.854rem + 1.69vw, 3.375rem);
+}
+
+.p-contact {
+  margin-bottom: 15rem;
+}
+.p-contact__titile {
+  margin-bottom: 5rem;
+}
+.p-contact__drop-right {
+  max-width: 80px;
+  width: 11%;
+  margin-left: 83%;
+}
+.p-contact__drop-center {
+  max-width: 354px;
+  width: 85%;
+  display: grid;
+  place-content: center;
+  gap: 10%;
+  margin: 0 auto;
+}
+.p-contact__drop-left {
+  max-width: 100px;
+  width: 8%;
+  margin-right: 86%;
+}
+.p-contact__h3 {
+  font-size: 4vw;
+}
+@media screen and (width >= 375px) {
+  .p-contact__h3 {
+    font-size: 1.25rem;
+  }
 }
 
 .p-footer {
@@ -765,6 +763,16 @@ img {
 @media (hover: none) {
   .u-hover__works:active .p-works__card-inner {
     transform: rotateY(180deg);
+  }
+}
+@media (hover: hover) {
+  .u-hover__drop:hover {
+    border-radius: 50%;
+  }
+}
+@media (hover: none) {
+  .u-hover__drop:active {
+    border-radius: 50%;
   }
 }
 .u-mb__24 {

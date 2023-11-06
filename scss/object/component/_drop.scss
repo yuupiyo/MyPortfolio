@@ -20,35 +20,13 @@
   &__right {
     @extend .c-drop;
     border-radius: 30% 70% 36% 64% / 60% 36% 64% 40% ;
-    max-width: 80px;
-    width: 11%;  
-    margin-left: 83%;
   }
   &__center {
     @extend .c-drop;
     border-radius: 54% 46% 54% 46% / 37% 60% 40% 63% ;
-    max-width: 354px;
-    width: 85%;
-    display: grid;
-    place-content: center;
-    gap: 10%;
-    margin: 0 auto;
-    @media (hover: hover) {
-      &:hover {
-        border-radius: 50%;
-      }
-    }
-    @media (hover: none) {
-      &:active {
-        border-radius: 50%;
-      }
-    }
   }
   &__left {
     @extend .c-drop;
     border-radius: 49% 51% 47% 53% / 60% 37% 63% 40% ;
-    max-width: 100px;
-    width: 8%;
-    margin-right: 86%;
   }
 }

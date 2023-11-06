@@ -53,3 +53,15 @@
     transform: rotateY(180deg);
   }
   }
+
+  // contact部分の挙動
+  @media (hover: hover) {
+    .u-hover__drop:hover {
+      border-radius: 50%;
+    }
+  }
+  @media (hover: none) {
+    .u-hover__drop:active {
+      border-radius: 50%;
+    }
+  }

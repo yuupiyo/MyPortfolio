@@ -4,14 +4,5 @@
   &__h2 {
     font-size: clamp(2.5rem, 2.28rem + 0.94vw, 3.125rem);
     text-align: center;
-    margin-bottom: g.rem(80);
-  }
-  &__h3 {
-    &--contact {
-      font-size: 4vw;
-      @include g.sp {
-        font-size: g.rem(20);
-      }
-    }
   }
 }

@@ -1,0 +1,32 @@
+@use "../../foundation/global" as g;
+
+.p-contact {
+  margin-bottom: g.rem(240);
+  &__titile {
+    margin-bottom: g.rem(80);
+  }
+  &__drop-right {
+    max-width: 80px;
+    width: 11%;  
+    margin-left: 83%;
+  }
+  &__drop-center {
+    max-width: 354px;
+    width: 85%;
+    display: grid;
+    place-content: center;
+    gap: 10%;
+    margin: 0 auto;
+  }
+  &__drop-left {
+    max-width: 100px;
+    width: 8%;
+    margin-right: 86%;
+  }
+  &__h3 {
+    font-size: 4vw;
+    @include g.sp {
+      font-size: g.rem(20);
+    }
+  }
+}
