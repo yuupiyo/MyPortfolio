@@ -152,12 +152,12 @@ img {
   border-radius: 49% 51% 47% 53%/60% 37% 63% 40%;
 }
 
-.c-flex, .c-flex__skill-icon, .c-flex__about-icon, .c-flex__about, .c-flex__nav {
+.c-flex, .c-flex__skill-icon, .c-flex__section, .c-flex__about-icon, .c-flex__about, .c-flex__nav {
   display: flex;
   flex-direction: column;
 }
 @media screen and (width >= 768px) {
-  .c-flex, .c-flex__skill-icon, .c-flex__about-icon, .c-flex__about, .c-flex__nav {
+  .c-flex, .c-flex__skill-icon, .c-flex__section, .c-flex__about-icon, .c-flex__about, .c-flex__nav {
     flex-direction: row;
   }
 }
@@ -188,15 +188,12 @@ img {
   gap: 5.5%;
 }
 .c-flex__section {
-  display: inline-flex;
-  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   gap: 2.5rem;
 }
 @media screen and (width >= 768px) {
   .c-flex__section {
-    flex-direction: row;
     justify-content: center;
     align-items: stretch;
   }
@@ -321,6 +318,12 @@ img {
 .p-about__h3 {
   display: inline-block;
   margin-bottom: 1.5rem;
+  font-size: 8vw;
+}
+@media screen and (width >= 375px) {
+  .p-about__h3 {
+    font-size: 1.875rem;
+  }
 }
 .p-about__list {
   margin-top: 1.5rem;
@@ -360,7 +363,7 @@ img {
 .p-contact__drop-left {
   max-width: 100px;
   width: 8%;
-  margin-right: 86%;
+  margin-left: 5%;
 }
 .p-contact__h3 {
   font-size: 4vw;
