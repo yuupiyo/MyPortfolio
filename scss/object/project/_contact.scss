@@ -25,6 +25,7 @@
   }
   &__h3 {
     font-size: 4vw;
+    text-align: center;
     @include g.sp {
       font-size: g.rem(20);
     }

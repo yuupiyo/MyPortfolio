@@ -367,6 +367,7 @@ img {
 }
 .p-contact__h3 {
   font-size: 4vw;
+  text-align: center;
 }
 @media screen and (width >= 375px) {
   .p-contact__h3 {
