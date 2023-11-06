@@ -5,10 +5,4 @@
   @include g.sp {
     font-size: g.rem(16);
   }
-  &__contact {
-    font-size: 4vw;
-      @include g.sp {
-        font-size: g.rem(16);
-      }
-  }
 }

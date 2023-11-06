@@ -105,91 +105,18 @@ img {
   background: #1B8343;
   border-radius: 1.25rem;
   color: #FFFFFF;
-}
-.c-button__works {
-  display: block;
-  margin-left: auto;
-  margin-top: 0.5rem;
-  padding: 0.5rem 2.1875rem;
   font-size: 4vw;
 }
 @media screen and (width >= 375px) {
-  .c-button__works {
+  .c-button, .c-button__works {
     font-size: 1rem;
   }
 }
-
-.c-card, .c-card__works {
-  width: clamp(11.825rem, 88vw, 23.815rem);
-}
-@media screen and (width >= 768px) {
-  .c-card, .c-card__works {
-    width: clamp(21.599rem, -0.253rem + 45.53vw, 27.063rem);
-  }
-}
-.c-card__works {
-  height: clamp(16.875rem, 7.013rem + 73.39vw, 26.875rem);
-  perspective: 1000px;
-}
-@media screen and (width >= 768px) {
-  .c-card__works {
-    height: clamp(24.259rem, 17.384rem + 14.36vw, 26rem);
-  }
-}
-.c-card__inner {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  border-radius: 1.25rem;
-  position: relative;
-  transform-style: preserve-3d;
-  transition: transform 1s;
-}
-.c-card__front {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  padding: 2.5rem 3% 0 5%;
-  border-radius: 1.25rem;
-  transform: rotateY(0deg);
-}
-@media screen and (width >= 768px) {
-  .c-card__front {
-    padding: 2.5rem;
-  }
-}
-.c-card__back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  display: grid;
-  place-content: center;
-  padding: 0 10%;
-  background-color: #fff;
-  border-radius: 1.25rem;
-  transform: rotateY(180deg);
-  font-size: 4.2666666667vw;
-}
-@media screen and (width >= 375px) {
-  .c-card__back {
-    font-size: 1rem;
-  }
+.c-button__works {
+  display: block;
+  padding: 0.5rem 2.1875rem;
 }
 
-@media (hover: hover) {
-  .c-card__works:hover .c-card__inner {
-    transform: rotateY(180deg);
-  }
-}
-@media (hover: none) {
-  .c-card__works:active.c-card__inner {
-    transform: rotateY(180deg);
-  }
-}
 .c-color__brown {
   color: #3A291C;
 }
@@ -382,36 +309,11 @@ img {
     font-size: 1rem;
   }
 }
-.c-text__contact {
-  font-size: 4vw;
-}
-@media screen and (width >= 375px) {
-  .c-text__contact {
-    font-size: 1rem;
-  }
-}
 
 .c-title__h2 {
   font-size: clamp(2.5rem, 2.28rem + 0.94vw, 3.125rem);
   text-align: center;
   margin-bottom: 5rem;
-}
-.c-title__h3, .c-title__h3--works {
-  font-size: 8vw;
-}
-@media screen and (width >= 375px) {
-  .c-title__h3, .c-title__h3--works {
-    font-size: 1.875rem;
-  }
-}
-.c-title__h3--works {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-@media screen and (width >= 375px) {
-  .c-title__h3--works {
-    margin-bottom: 2rem;
-  }
 }
 .c-title__h3--contact {
   font-size: 4vw;
@@ -667,6 +569,72 @@ img {
   margin-top: clamp(1rem, 0.648rem + 1.5vw, 2rem);
 }
 
+.p-works {
+  margin-bottom: 15rem;
+}
+.p-works__title {
+  margin-bottom: 5rem;
+}
+.p-works__h3 {
+  font-size: 8vw;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+@media screen and (width >= 375px) {
+  .p-works__h3 {
+    font-size: 1.875rem;
+    margin-bottom: 2rem;
+  }
+}
+.p-works__card {
+  width: clamp(11.825rem, 88vw, 23.815rem);
+  height: clamp(16.875rem, 7.013rem + 73.39vw, 26.875rem);
+  perspective: 1000px;
+}
+@media screen and (width >= 768px) {
+  .p-works__card {
+    width: clamp(21.599rem, -0.253rem + 45.53vw, 27.063rem);
+    height: clamp(24.259rem, 17.384rem + 14.36vw, 26rem);
+  }
+}
+.p-works__card-inner {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+.p-works__card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  padding: 2.5rem 3% 0 5%;
+  transform: rotateY(0deg);
+}
+@media screen and (width >= 768px) {
+  .p-works__card-front {
+    padding: 2.5rem;
+  }
+}
+.p-works__card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  display: grid;
+  place-content: center;
+  padding: 0 10%;
+  transform: rotateY(180deg);
+}
+.p-works__button {
+  margin-left: auto;
+  margin-top: 0.5rem;
+}
+
 .u-animation {
   width: 100%;
   display: inline-block;
@@ -787,6 +755,16 @@ img {
   }
   .u-hover__popup:active .c-icon__github {
     fill: #1B8343;
+  }
+}
+@media (hover: hover) {
+  .u-hover__works:hover .p-works__card-inner {
+    transform: rotateY(180deg);
+  }
+}
+@media (hover: none) {
+  .u-hover__works:active .p-works__card-inner {
+    transform: rotateY(180deg);
   }
 }
 .u-mb__24 {

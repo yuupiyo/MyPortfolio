@@ -7,18 +7,6 @@
     margin-bottom: g.rem(80);
   }
   &__h3 {
-    font-size: g.sp-vw(30);
-    @include g.sp {
-      font-size: g.rem(30);
-    }
-    &--works {
-      @extend .c-title__h3;
-      text-align: center;
-      margin-bottom: g.rem(16);
-      @include g.sp {
-        margin-bottom: g.rem(32);
-      }
-    }
     &--contact {
       font-size: 4vw;
       @include g.sp {

@@ -5,16 +5,15 @@
   background: g.$color-green;
   border-radius: g.rem(20);
   color: g.$color-white;
+  font-size: 4vw;
+  @include g.sp {
+    font-size: g.rem(16);
+  }
   &__works {
     @extend .c-button;
     display: block;
-    margin-left: auto;
-    margin-top: g.rem(8);
+    
     padding: g.rem(8) g.rem(35);
-    font-size: 4vw;
-    @include g.sp {
-      font-size: g.rem(16);
-    }
   }
   
   

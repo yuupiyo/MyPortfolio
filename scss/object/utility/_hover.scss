@@ -41,3 +41,15 @@
       fill: g.$color-green;
     }
   }
+
+  // works部分の挙動
+  @media (hover: hover) {
+    .u-hover__works:hover .p-works__card-inner {
+      transform: rotateY(180deg);
+    }
+    }
+  @media (hover: none) {
+    .u-hover__works:active .p-works__card-inner {
+    transform: rotateY(180deg);
+  }
+  }
