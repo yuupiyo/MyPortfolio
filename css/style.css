@@ -535,6 +535,22 @@ img {
     opacity: 1;
   }
 }
+.p-single__title {
+  width: 100%;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+}
+.p-single__h3 {
+  display: inline-block;
+  font-size: 8vw;
+}
+@media screen and (width >= 375px) {
+  .p-single__h3 {
+    font-size: 1.875rem;
+  }
+}
+
 .p-skill {
   margin-bottom: 15rem;
 }

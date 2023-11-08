@@ -1,0 +1,17 @@
+@use "../../foundation/global" as g;
+
+.p-single {
+  &__title {
+    width: 100%;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__h3 {
+    display: inline-block;
+    font-size: g.sp-vw(30);
+    @include g.sp {
+      font-size: g.rem(30);
+    }
+  }
+}
