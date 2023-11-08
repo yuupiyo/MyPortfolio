@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="宮崎県の小さな山村で4人のお母さんをしながら、コーダーを目指す日吉ゆかりのポートフォリオです。">
+  <title>Yukari Hiyoshi's Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="./js/main.js" defer></script>
+  <script src="./js/gsap.js" defer></script>
+</head>
+<body>
+  <header class="l-header c-background__glass">
+    <button class="p-hamburger js-hamburger" type="button">
+      <span class="c-background__brown"></span>
+      <span class="c-background__brown"></span>
+      <span class="c-background__brown"></span>
+    </button>
+    <nav class="p-nav js-nav">
+      <ul class="c-flex__nav c-font-family__en c-color__brown">
+        <li><a href="#">Home</a></li>
+        <li><a href="./index.html/#about">About</a></li>
+        <li><a href="./index.html/#contact">Skill</a></li>
+        <li><a href="./index.html/#works">Works</a></li>
+        <li><a href="./index.html/#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="c-background__circle js-circle"></div>
+  </header>
+
+  <main class="l-main p-single" ontouchstart="">
+    <div class="p-single__title">
+      <h2>Hamberger-Site</h2>
+      <p>Coding/WordPress</p>
+    </div>
+    <div class="c-inner">
+      <ul>
+        <li>
+          <h3>PC</h3>
+          <figure>
+            <picture>
+              <source srcset="./images/hamberger-pc.webp" type="image/webp">
+              <img src="./images/hamberger-pc.jpg" srcset="./images/hamberger-pc@2x.jpg 2x" width="391" height="507" alt="オンラインスクールRaiseTechのWordPress副業コースの最終課題で作成したWebサイトのPCサイズの写真" loading="lazy">
+            </picture>
+          </figure>
+        </li>
+        <li>
+          <h3>SP</h3>
+          <figure>
+            <picture>
+              <source srcset="./images/hamberger-sp.webp" type="image/webp">
+              <img src="./images/hamberger-sp.jpg" srcset="./images/hamberger-sp@2x.jpg 2x" width="93" height="502" alt="オンラインスクールRaiseTechのWordPress副業コースの最終課題で作成したWebサイトのSPサイズの写真" loading="lazy">
+            </picture>
+          </figure>
+        </li>
+      </ul>
+
+      <ol>
+        <dt>制作期間</dt>
+        <dd>2ヶ月（計184.5時間）</dd>
+        <dt>使用スキル</dt>
+        <dd>HTML/CSS/Sass/jQuery/FLOCSS/WordPress/GitHub/AdobeXD</dd>
+        <dt>Link</dt>
+        <dd>https://yuupiyo-wp.com/hamburger/</dd>
+        <dt>コメント</dt>
+        <dd>RaiseTech「WordPress副業コース」の最終課題で制作しました。Adobe XDのデザインカンプからのコーディング、WordPress化、サーバーへのデプロイまで行いました。又、CSS設計にFLOCSSを学び、作業の効率化と保守性のある命名規則を意識しています。</dd>
+      </ol>
+    </div>
+  </main>
+
+  <div class="p-pagenation">
+    <ul>
+      <li>Prev</li>
+      <li>Next</li>
+    </ul>
+  </div>
+
+  <footer class="p-footer">
+    <p class="p-footer__text c-font-family__en c-font-color__white"><small>©︎2023 Yukari Hiyoshi</small></p>
+  </footer>
+</body>
+</html>
