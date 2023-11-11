@@ -1,0 +1,16 @@
+@use "../../foundation/global" as g;
+
+.p-pagenation {
+  max-width: 655px;
+  width: 87.2%;
+  display: flex;
+  justify-content: space-between;
+  font-size: g.sp-vw(30);
+  margin-bottom: g.rem(196);
+  @include g.sp {
+    font-size: g.rem(30);
+  }
+  @include g.tablet {
+    width: 68.2%;
+  }
+}

@@ -9,6 +9,7 @@
 @use "./object/component/background";
 @use "./object/component/border";
 @use "./object/component/button";
+@use "./object/component/circle";
 @use "./object/component/color";
 @use "./object/component/drop";
 @use "./object/component/flex";
@@ -26,6 +27,7 @@
 @use "./object/project/hamburger";
 @use "./object/project/mainvisual";
 @use "./object/project/nav";
+@use "./object/project/pagenation";
 @use "./object/project/single";
 @use "./object/project/skill";
 @use "./object/project/works";

@@ -22,21 +22,3 @@
     font-weight: 700;
   }
 }
-
-//文字色の設定
-.c-font-color {
-
-  //文字色：茶色Ver
-  &__brown {
-    color: g.$color-brown;
-  }
-
-  //文字色：白色Ver
-  &__white {
-    color: g.$color-white;
-  }
-}
-
-.c-font-size {
-  font-size: g.rem(16);
-}
