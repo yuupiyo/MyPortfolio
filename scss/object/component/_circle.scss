@@ -6,19 +6,19 @@
   &::after {
     position: absolute;
     content: "";
-    width: 56px;
-    height: 56px;
+    height: 65%;
+    aspect-ratio: 1;
     border-radius: 50%;
     z-index: -1;
   }
   &::before {
     background-color: g.$color-yellow;
-    top: -25%;
-    left: -8%;
+    top: -19%;
+    left: -7.5%;
   }
   &::after {
     background-color: g.$color-green;
-    bottom: -25%;
-    right: -8%;
+    bottom: -24%;
+    right: -7.5%;
   }
 }
