@@ -1,0 +1,29 @@
+@use "../../foundation/global" as g;
+
+.p-page {
+  &__title {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__h2 {
+    display: inline-block;
+    margin-bottom: g.rem(96);
+    font-size: g.sp-vw(50);
+    @include g.sp {
+      font-size: g.rem(50);
+    }
+  }
+  &__form {
+    max-width: 640px;
+    width: 83.2%;
+    margin: 0 auto;
+    @include g.tablet {
+      width: 66.6%;
+    }
+  }
+  &__button {
+    display: block;
+    margin: g.rem(160) auto 0;
+  }
+}

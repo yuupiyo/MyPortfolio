@@ -21,4 +21,15 @@
     bottom: -24%;
     right: -7.5%;
   }
+  &__page {
+    @extend .c-circle;
+    &::before {
+      top: -10%;
+      left: -17%;
+    }
+    &::after {
+      bottom: -16%;
+      right: -19%;
+    }
+  }
 }
