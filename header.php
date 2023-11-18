@@ -8,13 +8,14 @@
   <title>Yukari Hiyoshi's Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
+  <?php wp_head(); ?>
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script src="./js/main.js" defer></script>
-  <script src="./js/gsap.js" defer></script>
+  <script src="./js/main.js" defer></script> -->
+  <!-- <script src="./js/gsap.js" defer></script> -->
 </head>
 <body>
   <header class="l-header c-background__glass">
