@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html <?php language_attributes(); ?>>
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +17,9 @@
   <script src="./js/main.js" defer></script> -->
   <!-- <script src="./js/gsap.js" defer></script> -->
 </head>
-<body>
+<body <?php body_class(); ?>>
+  <?php wp_body_open(); ?>
+  
   <header class="l-header c-background__glass">
     <button class="p-hamburger js-hamburger" type="button">
       <span class="c-background__brown"></span>
