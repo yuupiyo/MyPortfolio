@@ -8,11 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <?php wp_head(); ?>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script src="./js/main.js" defer> -->
-  <!-- <script src="./js/gsap.js" defer></script> -->
 </head>
+
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
 
