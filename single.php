@@ -11,8 +11,8 @@
           <h3 class="p-single__h3 c-font-family__en c-color__brown c-border-bottom">PC</h3>
           <figure>
             <picture>
-              <source srcset="./images/hamberger-pc.webp" type="image/webp">
-              <img src="./images/hamberger-pc.jpg" srcset="./images/hamberger-pc@2x.jpg 2x" width="391" height="507" alt="オンラインスクールRaiseTechのWordPress副業コースの最終課題で作成したWebサイトのPCサイズの写真" loading="lazy">
+              <source srcset="<?php echo esc_url (get_theme_file_uri('/images/hamberger-pc.webp')); ?>" type="image/webp">
+              <img src="<?php echo esc_url (get_theme_file_uri('/images/hamberger-pc.jpg')); ?>" srcset="<?php echo esc_url (get_theme_file_uri('/images/hamberger-pc@2x.jpg')); ?> 2x" width="391" height="507" alt="オンラインスクールRaiseTechのWordPress副業コースの最終課題で作成したWebサイトのPCサイズの写真" loading="lazy">
             </picture>
           </figure>
         </li>
@@ -20,8 +20,8 @@
           <h3 class="p-single__h3 c-font-family__en c-color__brown c-border-bottom">SP</h3>
           <figure>
             <picture>
-              <source srcset="./images/hamberger-sp.webp" type="image/webp">
-              <img class="p-single__sp-image" src="./images/hamberger-sp.jpg" srcset="./images/hamberger-sp@2x.jpg 2x" width="93" height="502" alt="オンラインスクールRaiseTechのWordPress副業コースの最終課題で作成したWebサイトのSPサイズの写真" loading="lazy">
+              <source srcset="<?php echo esc_url (get_theme_file_uri('/images/hamberger-sp.webp')); ?>" type="image/webp">
+              <img class="p-single__sp-image" src="<?php echo esc_url (get_theme_file_uri('/images/hamberger-sp.jpg')); ?>" srcset="<?php echo esc_url (get_theme_file_uri('/images/hamberger-sp@2x.jpg')); ?> 2x" width="93" height="502" alt="オンラインスクールRaiseTechのWordPress副業コースの最終課題で作成したWebサイトのSPサイズの写真" loading="lazy">
             </picture>
           </figure>
         </li>
