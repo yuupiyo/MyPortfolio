@@ -109,51 +109,33 @@
       <section id="works" class="p-works">
         <h2 class="p-works__title c-font-family__en c-color__brown c-title__h2 js-fadein">Works</h2>
         <ul class="c-flex__section">
-          <li class="p-works__card u-hover__works js-fadein">
-            <a href="#" class="p-works__card-inner c-border c-border-radius">
-              <div class="p-works__card-front c-border-radius">
-                <h3 class="p-works__h3 c-font-family__en c-color__brown">My Portfolio</h3>
-                <picture>
-                  <source srcset="<?php echo esc_url (get_theme_file_uri('/images/portfolio.webp')); ?>" type="image/webp">
-                  <img src="<?php echo esc_url (get_theme_file_uri('/images/portfolio.jpg')); ?>" srcset="<?php echo esc_url (get_theme_file_uri('/images/portfolio.jpg')); ?> 2x" width="411" height="244" alt="このサイトの写真です!" loading="lazy">
-                </picture>
-                <button class="p-works__button c-button__works c-font-family__en" type="button">Read More</button>  
-              </div>
-              <div class="p-works__card-back c-border__back c-border-radius c-background__white">
-                <p class="c-font-family__ja c-color__brown c-text">自身のポートフォリオです。企画、デザイン、コーディング、WordPress化、サーバーへのデプロイまで行いました。セマンティックなマークアップ、保守性のあるCSS設計をするように意識して制作しました。</p>
-              </div>
-            </a>
-          </li>
-          <li class="p-works__card u-hover__works js-fadein">
-            <a href="#" class="p-works__card-inner c-border c-border-radius">
-              <div class="p-works__card-front c-border-radius">
-                <h3 class="p-works__h3 c-font-family__en c-color__brown">Hamburger-site</h3>
-                <picture>
-                  <source srcset="<?php echo esc_url (get_theme_file_uri('/images/hamburger.webp')); ?>" type="image/webp">
-                  <img src="<?php echo esc_url (get_theme_file_uri('/images/hamburger.jpg')); ?>" srcset="<?php echo esc_url (get_theme_file_uri('/images/hamburger.jpg')); ?> 2x" width="411" height="244" alt="RaiseTech WordPress副業コースの最終課題の写真です" loading="lazy">
-                </picture>
-                <button class="p-works__button c-button__works c-font-family__en" type="button">Read More</button>
-              </div>
-              <div class="p-works__card-back c-border__back c-border-radius c-background__white">
-                <p class="c-font-family__ja c-color__brown c-text">RaiseTech「WordPress副業コース」の最終課題で制作しました。Adobe XDのデザインカンプからのコーディング、WordPress化、サーバーへのデプロイまで行いました。又、CSS設計にFLOCSSを学び、作業の効率化と保守性のある命名規則を意識しています。</p>
-              </div>
-            </a>
-          </li>
-          <li class="p-works__card u-hover__works js-fadein">
-            <a href="#" class="p-works__card-inner c-border c-border-radius">
-              <div class="p-works__card-front c-border-radius">
-                <h3 class="p-works__h3 c-font-family__en c-color__brown">RaiseTech</h3>
-                <picture>
-                  <source srcset="<?php echo esc_url (get_theme_file_uri('/images/raisetech.webp')); ?>" type="image/webp">
-                  <img src="<?php echo esc_url (get_theme_file_uri('/images/raisetech.jpg')); ?>" srcset="<?php echo esc_url (get_theme_file_uri('/images/raisetech@2x.jpg')); ?> 2x" width="411" height="244" alt="RaiseTech WordPress副業コースの模写課題の写真です" loading="lazy">
-                </picture>
-                <button class="p-works__button c-button__works c-font-family__en" type="button">Read More</button>
-              </div>
-              <div class="p-works__card-back c-border__back c-border-radius c-background__white">
-                <p class="c-font-family__ja c-color__brown c-text">RaiseTech「WordPress副業コース」の2回目の課題で旧公式サイトの模写コーディングを行いました。デベロッパーツールの使い方、HTML/CSS/Sass/jQueryを学びながら制作していきました。</p>
-              </div>
-            </a>
-          </li>
+          <?php
+            $args = array(
+              'post_type' => 'post',
+              'posts_per_page' => 4,
+              'order' => 'DESC',
+              'cat' => 'works',
+            );
+            $the_query = new WP_Query( $args );
+          ?>
+          <?php if ( $the_query->have_posts() ): ?>
+            <?php while ( $the_query->have_posts() ): $the_query->the_post(); ?>  
+              <li class="p-works__card u-hover__works js-fadein">
+                <a href="<?php the_permalink(); ?>" class="p-works__card-inner c-border c-border-radius">
+                  <div class="p-works__card-front c-border-radius">
+                    <h3 class="p-works__h3 c-font-family__en c-color__brown"><?php the_title(); ?></h3>
+                    <figure>
+                      <?php the_post_thumbnail('full'); ?>
+                    </figure>
+                    <button class="p-works__button c-button__works c-font-family__en" type="button">Read More</button>
+                  </div>
+                  <div class="p-works__card-back c-border__back c-border-radius c-background__white">
+                    <div class="c-font-family__ja c-color__brown c-text"><?php the_excerpt(); ?></div>
+                  </div>
+                </a>
+              </li>
+            <?php endwhile; ?>
+          <?php endif; wp_reset_postdata(); ?>
         </ul>
       </section>
 
