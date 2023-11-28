@@ -32,8 +32,18 @@
             </picture>
           </li>
           <li class="p-about__info c-background__white c-shadow c-border-radius js-fadein">
-            <h3 class="p-about__h3 c-font-family__en c-color__brown c-title__h3 c-border-bottom">Yukari Hiyoshi</h3>
-            <p class="c-font-family__ja c-color__brown c-text u-mb__24">43歳東京出身。結婚を機に宮崎県諸塚村へ移住。2022年春から独学でWeb制作の学習開始。コーディングの楽しさを知り、更なるレベルアップを図る為に同年6月オンラインスクールRaiseTech「WordPress副業コース」に入る。同年10月に完走。その後、初案件獲得しました！今も自分のスキルを上げるべく、日々、学習しています。</p>
+            <h3 class="p-about__h3 c-font-family__en c-color__brown c-title__h3 c-border-bottom">
+            <?php
+              $author_nicename = get_the_author_meta('display_name', $post->post_author);
+              echo $author_nicename;
+            ?>
+            </h3>
+            <p class="c-font-family__ja c-color__brown c-text u-mb__24">
+            <?php
+              $author_description = get_the_author_meta('description', $post->post_author);
+              echo $author_description;
+            ?>
+            </p>
             <p class="c-font-family__ja c-color__brown c-text">日々の学習記録は、<a class="p-about__span c-font-family__en c-text__buildup" href="https://app.build-up.info/enterprises/bEDI6AXZ/portfolio/bQO1MTMgoTd" target="_blank">「BuildUp」</a>にて更新しております。</p>
             <ul class="p-about__list c-flex__about-icon">
               <li class="c-icon u-hover__popup">
