@@ -38,12 +38,12 @@
               echo $author_nicename;
             ?>
             </h3>
-            <p class="c-font-family__ja c-color__brown c-text u-mb__24">
+            <div class="c-font-family__ja c-color__brown c-text u-mb__24">
             <?php
               $author_description = get_the_author_meta('description', $post->post_author);
-              echo $author_description;
+              echo wpautop($author_description);
             ?>
-            </p>
+            </div>
             <p class="c-font-family__ja c-color__brown c-text">日々の学習記録は、<a class="p-about__span c-font-family__en c-text__buildup" href="https://app.build-up.info/enterprises/bEDI6AXZ/portfolio/bQO1MTMgoTd" target="_blank">「BuildUp」</a>にて更新しております。</p>
             <ul class="p-about__list c-flex__about-icon">
               <li class="c-icon u-hover__popup">
