@@ -594,6 +594,16 @@ img {
   display: block;
   margin: 10rem auto 0;
 }
+.p-page__text {
+  max-width: 480px;
+  width: 80.7%;
+  margin: 0 auto;
+}
+@media screen and (width >= 768px) {
+  .p-page__text {
+    width: 75%;
+  }
+}
 
 .p-pagenation {
   max-width: 655px;
@@ -953,5 +963,9 @@ img {
   .u-pb__sp {
     padding-bottom: 0;
   }
+}
+
+.u-p__page {
+  padding: 4rem 0;
 }
 /*# sourceMappingURL=style.css.map */

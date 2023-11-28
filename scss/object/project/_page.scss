@@ -26,4 +26,12 @@
     display: block;
     margin: g.rem(160) auto 0;
   }
+  &__text {
+    max-width: 480px;
+    width: 80.7%;
+    margin: 0 auto;
+    @include g.tablet {
+      width: 75%;
+    }
+  }
 }
