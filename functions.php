@@ -54,3 +54,12 @@ function add_files() {
 }
 add_action('wp_enqueue_scripts', 'add_files');
 
+// ユーザー情報画面にSNSリンクをつける
+function my_user_sns($sns) {
+  $sns['buildup'] = 'BuildUp';
+  $sns['codepen'] = 'CodePen';
+  $sns['github'] = 'GitHub';
+
+  return $sns;
+}
+add_filter('user_contactmethods', 'my_user_sns', 10, 1);
