@@ -1,6 +1,25 @@
 
 gsap.registerPlugin(ScrollTrigger);
 
+const paragraph = document.querySelector(".js-title");
+const textContent = paragraph.innerHTML;
+
+const newTextContent = textContent
+  .split(/(\s|<br>)/) // 空白または<br>タグで分割
+  .map((char) => {
+    if (char === " " || char === "<br>") {
+      return char; // 空白または<br>タグの場合はそのまま返す
+    } else {
+      return [...char]
+        .map((c) => `<span>${c}</span>`)
+        .join(""); // 文字を<span>タグで囲んで返す
+    }
+  })
+  .join("");
+
+paragraph.innerHTML = newTextContent;
+
+
 const texts = document.querySelectorAll('.js-title span');
 const mainvisual = document.querySelector('.js-mainvisual');
 const mainLeft = document.querySelector('.js-mainvisualLeft');

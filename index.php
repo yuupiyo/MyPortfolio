@@ -4,9 +4,7 @@
     <div class="p-mainvisual js-mainvisual">
       <div class="p-mainvisual__center">
         <h1 class="p-mainvisual__title c-font-family__en c-color__brown js-title">
-          <span>Y</span><span>u</span><span>k</span><span>a</span><span>r</span><span>i</span> <span>H</span><span>i</span><span>y</span><span>o</span><span>s</span><span>h</span><span>i</span>
-          <br>
-          <span>P</span><span>o</span><span>r</span><span>t</span><span>f</span><span>o</span><span>l</span><span>i</span><span>o</span>
+          <?php $user_id = get_the_author_meta('ID', $post->post_author); echo nl2br(get_field('maintitle', 'user_'.$user_id)); ?>
         </h1>
       </div>
       <picture>
@@ -26,10 +24,9 @@
         <h2 class="p-about__title c-font-family__en c-color__brown c-title__h2 js-fadein">About</h2>
         <ul class="c-flex__about">
           <li class="p-about__photo js-fadein">
-            <picture class="u-animation">
-              <source srcset="<?php echo esc_url (get_theme_file_uri('/images/myphoto.webp')); ?>" type="image/webp">
-              <img src="<?php echo esc_url (get_theme_file_uri('/images/myphoto.png')); ?>" srcset="<?php echo esc_url (get_theme_file_uri('/images/myphoto.png')); ?> 2x" width="285" height="453" alt="自分の写真" loading="lazy">
-            </picture>
+            <figure class="u-animation">
+              <img src="<?php $user_id = get_the_author_meta('ID', $post->post_author); the_field('myphoto', 'user_'.$user_id); ?>" width="285" height="453" alt="自分の写真" loading="lazy">
+            </figure>
           </li>
           <li class="p-about__info c-background__white c-shadow c-border-radius js-fadein">
             <h3 class="p-about__h3 c-font-family__en c-color__brown c-title__h3 c-border-bottom">
