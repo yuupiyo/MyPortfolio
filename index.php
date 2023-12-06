@@ -80,42 +80,35 @@
       <section id="skill" class="p-skill">
         <h2 class="p-skill__title c-font-family__en c-color__brown c-title__h2 js-fadein">Skill</h2>
         <ul class="c-flex__section">
-          <li class="p-skill__card c-border js-fadein">
-            <ul class="c-flex__skill-icon">
-              <li class="p-skill__icon01"><img src="<?php echo esc_url (get_theme_file_uri('/images/html.svg')); ?>" width="53" height="81" alt="HTMLのアイコン" loading="lazy"></li>
-              <li class="p-skill__icon01"><img src="<?php echo esc_url (get_theme_file_uri('/images/css.svg')); ?>" width="53" height="81" alt="CSSのアイコン" loading="lazy"></li>
-              <li class="p-skill__sass c-flex__sass"><img src="<?php echo esc_url (get_theme_file_uri('/images/sass.svg')); ?>" width="61" height="46" alt="Sassのアイコン" loading="lazy"></li>
-              <li class="p-skill__icon01"><img src="<?php echo esc_url (get_theme_file_uri('/images/js.svg')); ?>" width="53" height="81" alt="Java Scriptのアイコン" loading="lazy"></li>
-            </ul>
-            <p class="p-skill__text c-text c-font-family__ja c-color__brown">
-              セマンティックなマークアップの意識、Sassを使っての作業の効率化、さらにCSS設計(FLOCSS)を取り入れて、メンテナンス性のあるコーディングをするように心がけています。他にもレスポンシブ対応、アニメーション、ハンバーガーメニュー等の動きも実装出来ます。
-            </p>
-          </li>
-          <li class="p-skill__card c-border u-pb__sp js-fadein">
-            <img class="p-skill__wordpress" src="<?php echo esc_url (get_theme_file_uri('/images/WordPress.svg')); ?>" width="73" height="73" alt="WordPressのアイコン" loading="lazy">
-            <p class="p-skill__text c-text c-font-family__ja c-color__brown">
-              オリジナルテーマの制作、プラグインを使っての実装の経験があります。
-            </p>
-          </li>
-          <li class="p-skill__card c-border u-pb__sp js-fadein">
-            <ul class="c-flex__skill-icon">
-              <li class="p-skill__icon02"><img src="<?php echo esc_url (get_theme_file_uri('/images/vscode.svg')); ?>" width="67" height="67" alt="VScodeのアイコン" loading="lazy"></li>
-              <li class="p-skill__icon02"><img src="<?php echo esc_url (get_theme_file_uri('/images/github02.svg')); ?>" width="67" height="67" alt="GitHubのアイコン" loading="lazy"></li>
-            </ul>
-            <p class="p-skill__text c-text c-font-family__ja c-color__brown">
-              コードエディターにはVisual Studio Codeを使用しています。また、GitHubを使ってのバージョン管理、ソースコードの共有も出来ます。
-            </p>
-          </li>
-          <li class="p-skill__card c-border js-fadein">
-            <ul class="c-flex__skill-icon">
-              <li class="p-skill__figma c-flex__figma"><img src="<?php echo esc_url (get_theme_file_uri('/images/figma.svg')); ?>" width="41" height="63" alt="figmaのアイコン" loading="lazy"></li>
-              <li class="p-skill__icon02"><img src="<?php echo esc_url (get_theme_file_uri('/images/XD.svg')); ?>" width="63" height="63" alt="Adobe XDのアイコン" loading="lazy"></li>
-              <li class="p-skill__icon02"><img src="<?php echo esc_url (get_theme_file_uri('/images/Photoshop.svg')); ?>" width="63" height="63" alt="Photoshopのアイコン" loading="lazy"></li>
-            </ul>
-            <p class="p-skill__text c-text c-font-family__ja c-color__brown">
-              デザインツールに関しては只今、学習中ですがAdobe XDとFigmaで作成されたデザインカンプからのコーディングが出来ます。今回のポートフォリオに関しましてはAdobe XDを使ってデザインカンプを作成しました。またPhotshopで写真の切り抜きなどの加工の経験はあります。
-            </p>
-          </li>
+        <?php
+            $args = array(
+              'post_type' => 'skill',
+              'posts_per_page' => 4,
+              'order' => 'DESC',
+              'cat' => 'works',
+            );
+            $the_query = new WP_Query( $args );
+          ?>
+          <?php if ( $the_query->have_posts() ): ?>
+            <?php while ( $the_query->have_posts() ): $the_query->the_post(); ?>
+              <li class="p-skill__card c-border js-fadein">
+                <ul class="c-flex__skill-icon">
+                  <?php if(the_field('icon01') != ""): ?>
+                    <li class="p-skill__icon01"><img src="<?php the_field('icon01'); ?>" width="53" height="81" alt="HTMLのアイコン" loading="lazy"></li>
+                  <?php endif; ?>
+                  <?php if(the_field('icon02') != ""): ?>
+                    <li class="p-skill__icon01"><img src="<?php the_field('icon02'); ?>" width="53" height="81" alt="CSSのアイコン" loading="lazy"></li>
+                  <?php endif; ?>
+                  <?php if(the_field('icon03') != ""): ?>
+                    <li class="p-skill__icon01"><img src="<?php the_field('icon03'); ?>" width="53" height="81" alt="Java Scriptのアイコン" loading="lazy"></li>
+                  <?php endif; ?>
+                </ul>
+                <div class="p-skill__text c-text c-font-family__ja c-color__brown">
+                  <?php the_content(); ?> 
+                </div>
+              </li>
+          <?php endwhile; ?>
+          <?php endif; wp_reset_postdata(); ?>
         </ul>
       </section>
 
