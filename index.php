@@ -93,14 +93,14 @@
             <?php while ( $the_query->have_posts() ): $the_query->the_post(); ?>
               <li class="p-skill__card c-border js-fadein">
                 <ul class="c-flex__skill-icon">
-                  <?php if(the_field('icon01') != ""): ?>
-                    <li class="p-skill__icon01"><img src="<?php the_field('icon01'); ?>" width="53" height="81" alt="HTMLのアイコン" loading="lazy"></li>
+                  <?php $icon01 = get_field('icon01'); if( !empty($icon01) ): ?>
+                    <li class="p-skill__icon01"><img src="<?php echo $icon01['url']; ?>" width="<?php echo $icon01['width']; ?>" height="<?php echo $icon01['height']; ?>" alt="<?php echo $icon01['alt']; ?>" loading="lazy"></li>
                   <?php endif; ?>
-                  <?php if(the_field('icon02') != ""): ?>
-                    <li class="p-skill__icon01"><img src="<?php the_field('icon02'); ?>" width="53" height="81" alt="CSSのアイコン" loading="lazy"></li>
+                  <?php $icon02 = get_field('icon02'); if( !empty($icon02) ): ?>
+                    <li class="p-skill__icon01"><img src="<?php echo $icon02['url']; ?>" width="<?php echo $icon02['width']; ?>" height="<?php echo $icon02['height']; ?>" alt="<?php echo $icon02['alt']; ?>" loading="lazy"></li>
                   <?php endif; ?>
-                  <?php if(the_field('icon03') != ""): ?>
-                    <li class="p-skill__icon01"><img src="<?php the_field('icon03'); ?>" width="53" height="81" alt="Java Scriptのアイコン" loading="lazy"></li>
+                  <?php $icon03 = get_field('icon03'); if( !empty($icon03) ): ?>
+                    <li class="p-skill__icon01"><img src="<?php echo $icon03['url']; ?>" width="<?php echo $icon03['width']; ?>" height="<?php echo $icon03['height']; ?>" alt="<?php echo $icon03['alt']; ?>" loading="lazy"></li>
                   <?php endif; ?>
                 </ul>
                 <div class="p-skill__text c-text c-font-family__ja c-color__brown">
