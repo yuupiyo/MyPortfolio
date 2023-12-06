@@ -63,3 +63,49 @@ function my_user_sns($sns) {
   return $sns;
 }
 add_filter('user_contactmethods', 'my_user_sns', 10, 1);
+
+/* ---------- カスタム投稿タイプを追加 ---------- */
+function create_post_type() {
+
+  register_post_type(
+    'skill',
+    array(
+      'label' => 'スキル',
+      'public' => true,
+      'has_archive' => true,
+      'show_in_rest' => true,
+      'menu_position' => 5,
+      'supports' => array(
+        'title',
+        'editor',
+        'thumbnail',
+        'revisions',
+      ),
+    )
+  );
+
+  register_taxonomy(
+    'skill-cat',
+    'skill',
+    array(
+      'label' => 'カテゴリー',
+      'hierarchical' => true,
+      'public' => true,
+      'show_in_rest' => true,
+    )
+  );
+
+  register_taxonomy(
+    'skill-tag',
+    'skill',
+    array(
+      'label' => 'タグ',
+      'hierarchical' => false,
+      'public' => true,
+      'show_in_rest' => true,
+      'update_count_callback' => '_update_post_term_count',
+    )
+  );
+
+}
+add_action( 'init', 'create_post_type' );
