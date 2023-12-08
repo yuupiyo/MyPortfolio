@@ -150,7 +150,7 @@
         <div class="p-contact__drop-right c-drop__right"></div>
         <section class="p-contact__drop-center c-drop__center u-hover__drop">
           <h3 class="p-contact__h3 c-font-family__ja--bold c-color__brown c-title__h3--contact">お問い合わせはこちらから</h3>
-          <button class="c-button c-font-family__ja--bold" type="button">お問い合わせフォームへ</button>
+          <button class="c-button c-font-family__ja--bold" type="button"><a href="<?php echo home_url('/contact'); ?>">お問い合わせフォームへ</a></button>
         </section>
         <div class="p-contact__drop-left c-drop__left"></div>
       </section>

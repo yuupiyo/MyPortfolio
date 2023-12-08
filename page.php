@@ -7,9 +7,8 @@
 
     <div class="c-inner">
       <div class="p-page__form c-background__white c-shadow c-border-radius">
-
+        <?php the_content(); ?>
       </div>
-      <button class="p-page__button c-button c-font-family__ja--bold" type="button">確認画面へ</button>
     </div>
   </main>
   
