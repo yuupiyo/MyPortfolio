@@ -374,7 +374,7 @@ img {
 .p-contact {
   margin-bottom: 15rem;
 }
-.p-contact__titile {
+.p-contact__title {
   margin-bottom: 5rem;
 }
 .p-contact__drop-right {
@@ -584,6 +584,7 @@ img {
   max-width: 640px;
   width: 83.2%;
   margin: 0 auto;
+  padding: 10% 7%;
 }
 @media screen and (width >= 768px) {
   .p-page__form {
@@ -985,6 +986,7 @@ img {
   font-family: "Zen Kaku Gothic New", sans-serif;
   font-weight: 700;
   color: #3A291C;
+  background: linear-gradient(transparent 60%, #ff6 60%);
 }
 
 [data-screen=back] .smf-progress-tracker__item--input .smf-progress-tracker__item__number, [data-screen=complete] .smf-progress-tracker__item--complete .smf-progress-tracker__item__number, [data-screen=confirm] .smf-progress-tracker__item--confirm .smf-progress-tracker__item__number, [data-screen=input] .smf-progress-tracker__item--input .smf-progress-tracker__item__number, [data-screen=invalid] .smf-progress-tracker__item--input .smf-progress-tracker__item__number {
@@ -994,7 +996,6 @@ img {
 .smf-progress-tracker__item__text {
   font-family: "Zen Kaku Gothic New", sans-serif;
   font-weight: 700;
-  color: #3A291C;
   font-size: 4.2666666667vw;
 }
 @media screen and (width >= 375px) {
@@ -1020,22 +1021,13 @@ img {
   border: none;
 }
 
+.smf-form .smf-item .smf-text-control__control:hover {
+  border-color: #1B8343;
+}
+
 .smf-text-control,
 .smf-textarea-control {
   border: 0.125rem solid #1B8343;
-  border-radius: 0.125rem;
-  position: relative;
-}
-.smf-text-control::before,
-.smf-textarea-control::before {
-  content: "";
-  border: 0.125rem solid #E5D41C;
-  border-radius: 0.125rem;
-  position: absolute;
-  width: 100%;
-  height: 104%;
-  top: 0.125rem;
-  left: 0.0625rem;
   border-radius: 0.125rem;
 }
 
@@ -1051,6 +1043,15 @@ img {
 .smf-button-control__control {
     font-size: 1rem;
   }
+}
+
+.smf-form .smf-item .smf-file-control > label {
+  flex-direction: column;
+  gap: 0.3125rem;
+}
+
+.smf-form .smf-item .smf-file-control__filename {
+  margin-left: 0;
 }
 
 .smf-file-control__filename {
@@ -1071,7 +1072,7 @@ img {
   background: #1B8343;
   border-radius: 0.625rem;
   color: #FFFFFF;
-  font-size: 4vw;
+  font-size: 4.2666666667vw;
 }
 @media screen and (width >= 375px) {
   .smf-action .smf-button-control__control,
