@@ -27,7 +27,9 @@
     font-size: g.rem(16);
   }
 }
-.smf-item__description {
+.smf-item__description,
+.smf-system-error-content-ready,
+.smf-complete-content p {
   font-family: 'Zen Kaku Gothic New', sans-serif;
   font-weight: 400;
   color: g.$color-brown;
