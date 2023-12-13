@@ -607,22 +607,23 @@ img {
 }
 
 .p-pagenation {
-  max-width: 655px;
-  width: 87.2%;
-  display: flex;
-  justify-content: space-between;
+  width: 73%;
+  margin: 7.875rem auto 12.25rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
   font-size: 8vw;
-  margin-bottom: 12.25rem;
 }
 @media screen and (width >= 375px) {
   .p-pagenation {
     font-size: 1.875rem;
   }
 }
-@media screen and (width >= 768px) {
-  .p-pagenation {
-    width: 68.2%;
-  }
+.p-pagenation .nav-links {
+  display: flex;
+  justify-content: space-between;
+}
+.p-pagenation .nav-next {
+  margin-left: auto;
 }
 
 .p-single__title {
