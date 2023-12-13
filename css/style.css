@@ -465,8 +465,8 @@ img {
   max-width: 1440px;
   width: 100%;
   height: 100dvh;
-  position: relative;
   margin: 0 auto;
+  position: relative;
 }
 .p-mainvisual__center {
   width: 100%;
@@ -475,23 +475,23 @@ img {
   place-content: center;
 }
 .p-mainvisual__left, .p-mainvisual__right {
-  position: absolute;
-  top: 0;
   width: 100%;
   height: 100%;
+  position: absolute;
+  top: 0;
   overflow-x: visible;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .p-mainvisual__left {
-  left: 0;
   max-width: 1119px;
+  left: 0;
   -o-object-position: right;
      object-position: right;
 }
 .p-mainvisual__right {
-  right: 0;
   max-width: 1825px;
+  right: 0;
   -o-object-position: left;
      object-position: left;
 }
