@@ -4,8 +4,8 @@
   max-width: 1440px;
   width: 100%;
   height: 100dvh;
-  position: relative;
   margin: 0 auto;
+  position: relative;
   &__center {
     width: 100%;
     height: 100%;
@@ -14,23 +14,22 @@
   }
   &__left,
   &__right {
-    position: absolute;
-    top: 0;
     width: 100%;
     height: 100%;
+    position: absolute;
+    top: 0;
     overflow-x: visible;
     object-fit: cover;
   }
   &__left {
-    left: 0;
     max-width: 1119px;
+    left: 0;
     object-position: right;
   }
   &__right {
-    right: 0;
     max-width: 1825px;
+    right: 0;
     object-position: left;
-    // transform: translateX(65%);
   }
   &__title {
     font-size: g.pc-vw(100);

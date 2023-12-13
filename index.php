@@ -7,14 +7,18 @@
           <?php $user_id = get_the_author_meta('ID', $post->post_author); echo nl2br(get_field('maintitle', 'user_'.$user_id)); ?>
         </h1>
       </div>
-      <picture>
-        <source srcset="<?php echo esc_url (get_theme_file_uri('/images/leaf-left.webp')); ?>" type="image/webp">
-        <img class="p-mainvisual__left js-mainvisualLeft" src="<?php echo esc_url (get_theme_file_uri('/images/leaf-left.png')); ?>" srcset="<?php echo esc_url (get_theme_file_uri('/images/leaf-left.png')); ?> 2x" width="1119" height="802" alt="メインビジュアルの左側に配置されている葉っぱの画像">
-      </picture>
-      <picture>
-        <source srcset="<?php echo esc_url (get_theme_file_uri('/images/leaf-right.webp')); ?>" type="image/webp">
-        <img class="p-mainvisual__right js-mainvisualRight" src="<?php echo esc_url (get_theme_file_uri('/images/leaf-right.png')); ?>" srcset="<?php echo esc_url (get_theme_file_uri('/images/leaf-right.png')); ?> 2x" width="1825" height="802" alt="メインビジュアルの右側に配置されている葉っぱの画像">
-      </picture>
+      <figure>
+        <picture>
+          <source srcset="<?php echo esc_url (get_theme_file_uri('/images/leaf-left.webp')); ?>" type="image/webp">
+          <img class="p-mainvisual__left js-mainvisualLeft" src="<?php echo esc_url (get_theme_file_uri('/images/leaf-left.png')); ?>" srcset="<?php echo esc_url (get_theme_file_uri('/images/leaf-left.png')); ?> 2x" width="1119" height="802" alt="メインビジュアルの左側に配置されている葉っぱの画像">
+        </picture>
+      </figure>
+      <figure>
+        <picture>
+          <source srcset="<?php echo esc_url (get_theme_file_uri('/images/leaf-right.webp')); ?>" type="image/webp">
+          <img class="p-mainvisual__right js-mainvisualRight" src="<?php echo esc_url (get_theme_file_uri('/images/leaf-right.png')); ?>" srcset="<?php echo esc_url (get_theme_file_uri('/images/leaf-right.png')); ?> 2x" width="1825" height="802" alt="メインビジュアルの右側に配置されている葉っぱの画像">
+        </picture>
+      </figure>
     </div>
   </div>
 
