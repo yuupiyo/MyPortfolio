@@ -13,21 +13,8 @@
       width: 45%;
     }
   }
-  &__icon01 {
+  &__icon {
     width: 15.1%;
-  }
-  &__icon02 {
-    width: 19.1%;
-  }
-  &__sass {
-    width: 17.4%;
-  }
-  &__wordpress {
-    width: 20.8%;
-    margin: 0 auto;
-  }
-  &__figma {
-    width: 11.7%;
   }
   &__text {
     margin-top: clamp(1rem, 0.648rem + 1.5vw, 2rem);

@@ -315,6 +315,14 @@ img {
   font-size: clamp(2.5rem, 2.28rem + 0.94vw, 3.125rem);
   text-align: center;
 }
+.c-title__h3 {
+  font-size: 8vw;
+}
+@media screen and (width >= 375px) {
+  .c-title__h3 {
+    font-size: 1.875rem;
+  }
+}
 
 .p-about {
   margin-bottom: 15rem;
@@ -722,21 +730,8 @@ img {
     width: 45%;
   }
 }
-.p-skill__icon01 {
+.p-skill__icon {
   width: 15.1%;
-}
-.p-skill__icon02 {
-  width: 19.1%;
-}
-.p-skill__sass {
-  width: 17.4%;
-}
-.p-skill__wordpress {
-  width: 20.8%;
-  margin: 0 auto;
-}
-.p-skill__figma {
-  width: 11.7%;
 }
 .p-skill__text {
   margin-top: clamp(1rem, 0.648rem + 1.5vw, 2rem);
@@ -749,13 +744,11 @@ img {
   margin-bottom: 5rem;
 }
 .p-works__h3 {
-  font-size: 8vw;
-  text-align: center;
   margin-bottom: 1rem;
+  text-align: center;
 }
 @media screen and (width >= 375px) {
   .p-works__h3 {
-    font-size: 1.875rem;
     margin-bottom: 2rem;
   }
 }
@@ -771,20 +764,20 @@ img {
   }
 }
 .p-works__card-inner {
-  display: inline-block;
   width: 100%;
   height: 100%;
+  display: inline-block;
   position: relative;
   transform-style: preserve-3d;
   transition: transform 1s;
 }
 .p-works__card-front {
-  position: absolute;
   width: 100%;
   height: 100%;
+  padding: 2.5rem 3% 0 5%;
+  position: absolute;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  padding: 2.5rem 3% 0 5%;
   transform: rotateY(0deg);
 }
 @media screen and (width >= 768px) {
@@ -793,19 +786,19 @@ img {
   }
 }
 .p-works__card-back {
-  position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  padding: 0 10%;
   display: grid;
   place-content: center;
-  padding: 0 10%;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   transform: rotateY(180deg);
 }
 .p-works__button {
-  margin-left: auto;
   margin-top: 0.5rem;
+  margin-left: auto;
 }
 
 .u-animation {

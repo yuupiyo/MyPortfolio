@@ -98,13 +98,13 @@
               <li class="p-skill__card c-border js-fadein">
                 <ul class="c-flex__skill-icon">
                   <?php $icon01 = get_field('icon01'); if( !empty($icon01) ): ?>
-                    <li class="p-skill__icon01"><img src="<?php echo $icon01['url']; ?>" width="<?php echo $icon01['width']; ?>" height="<?php echo $icon01['height']; ?>" alt="<?php echo $icon01['alt']; ?>" loading="lazy"></li>
+                    <li class="p-skill__icon"><img src="<?php echo $icon01['url']; ?>" width="<?php echo $icon01['width']; ?>" height="<?php echo $icon01['height']; ?>" alt="<?php echo $icon01['alt']; ?>" loading="lazy"></li>
                   <?php endif; ?>
                   <?php $icon02 = get_field('icon02'); if( !empty($icon02) ): ?>
-                    <li class="p-skill__icon01"><img src="<?php echo $icon02['url']; ?>" width="<?php echo $icon02['width']; ?>" height="<?php echo $icon02['height']; ?>" alt="<?php echo $icon02['alt']; ?>" loading="lazy"></li>
+                    <li class="p-skill__icon"><img src="<?php echo $icon02['url']; ?>" width="<?php echo $icon02['width']; ?>" height="<?php echo $icon02['height']; ?>" alt="<?php echo $icon02['alt']; ?>" loading="lazy"></li>
                   <?php endif; ?>
                   <?php $icon03 = get_field('icon03'); if( !empty($icon03) ): ?>
-                    <li class="p-skill__icon01"><img src="<?php echo $icon03['url']; ?>" width="<?php echo $icon03['width']; ?>" height="<?php echo $icon03['height']; ?>" alt="<?php echo $icon03['alt']; ?>" loading="lazy"></li>
+                    <li class="p-skill__icon"><img src="<?php echo $icon03['url']; ?>" width="<?php echo $icon03['width']; ?>" height="<?php echo $icon03['height']; ?>" alt="<?php echo $icon03['alt']; ?>" loading="lazy"></li>
                   <?php endif; ?>
                 </ul>
                 <div class="p-skill__text c-text c-font-family__ja c-color__brown">
@@ -133,7 +133,7 @@
               <li class="p-works__card u-hover__works js-fadein">
                 <a href="<?php the_permalink(); ?>" class="p-works__card-inner c-border c-border-radius">
                   <div class="p-works__card-front c-border-radius">
-                    <h3 class="p-works__h3 c-font-family__en c-color__brown"><?php the_title(); ?></h3>
+                    <h3 class="p-works__h3 c-title__h3 c-font-family__en c-color__brown"><?php the_title(); ?></h3>
                     <figure>
                       <?php the_post_thumbnail('full'); ?>
                     </figure>
