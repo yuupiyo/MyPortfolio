@@ -7,8 +7,8 @@
     text-align: center;
   }
   &__h2 {
-    display: inline-block;
     margin-bottom: g.rem(96);
+    display: inline-block;
     font-size: g.sp-vw(50);
     @include g.sp {
       font-size: g.rem(50);
@@ -24,8 +24,8 @@
     }
   }
   &__button {
-    display: block;
     margin: g.rem(160) auto 0;
+    display: block;
   }
   &__text {
     max-width: 480px;
