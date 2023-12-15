@@ -12,13 +12,15 @@
             <li class="p-single__li c-background__white c-shadow c-border-radius">
               <h3 class="p-single__h3 c-font-family__en c-color__brown c-border-bottom">PC</h3>
               <figure>
-                <img src="<?php the_field('pc_img'); ?>"  width="391" height="507" alt="オンラインスクールRaiseTechのWordPress副業コースの最終課題で作成したWebサイトのPCサイズの写真" loading="lazy">
+                <?php $pc_img = get_field('pc_img'); ?>
+                <img src="<?php echo $pc_img['url']; ?>"  width="<?php echo $pc_img['width']; ?>" height="<?php echo $pc_img['height']; ?>" alt="<?php echo $pc_img['alt']; ?>" loading="lazy">
               </figure>
             </li>
             <li class="p-single__li c-background__white c-shadow c-border-radius">
               <h3 class="p-single__h3 c-font-family__en c-color__brown c-border-bottom">SP</h3>
               <figure>
-                <img class="p-single__sp-image" src="<?php the_field('sp_img'); ?>" width="93" height="502" alt="オンラインスクールRaiseTechのWordPress副業コースの最終課題で作成したWebサイトのSPサイズの写真" loading="lazy">
+                <?php $sp_img = get_field('sp_img'); ?>
+                <img class="p-single__sp-image" src="<?php echo $sp_img['url']; ?>" width="<?php echo $sp_img['width']; ?>" height="<?php echo $sp_img['height']; ?>" alt="<?php echo $sp_img['alt']; ?>" loading="lazy">
               </figure>
             </li>
           </ul>
