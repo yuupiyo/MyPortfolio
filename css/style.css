@@ -356,12 +356,6 @@ img {
 .p-about__h3 {
   display: inline-block;
   margin-bottom: 1.5rem;
-  font-size: 8vw;
-}
-@media screen and (width >= 375px) {
-  .p-about__h3 {
-    font-size: 1.875rem;
-  }
 }
 .p-about__list {
   margin-top: 1.5rem;
@@ -393,10 +387,10 @@ img {
 .p-contact__drop-center {
   max-width: 354px;
   width: 85%;
+  margin: 0 auto;
   display: grid;
   place-content: center;
   gap: 10%;
-  margin: 0 auto;
 }
 .p-contact__drop-left {
   max-width: 100px;

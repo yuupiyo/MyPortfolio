@@ -13,10 +13,10 @@
   &__drop-center {
     max-width: 354px;
     width: 85%;
+    margin: 0 auto;
     display: grid;
     place-content: center;
     gap: 10%;
-    margin: 0 auto;
   }
   &__drop-left {
     max-width: 100px;

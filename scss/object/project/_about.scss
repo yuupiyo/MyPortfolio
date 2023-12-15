@@ -27,10 +27,6 @@
   &__h3 {
     display: inline-block;
     margin-bottom: g.rem(24);
-    font-size: g.sp-vw(30);
-    @include g.sp {
-      font-size: g.rem(30);
-    }
   }
   &__list {
     margin-top: g.rem(24);

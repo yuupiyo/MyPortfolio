@@ -33,7 +33,7 @@
             </figure>
           </li>
           <li class="p-about__info c-background__white c-shadow c-border-radius js-fadein">
-            <h3 class="p-about__h3 c-font-family__en c-color__brown c-title__h3 c-border-bottom">
+            <h3 class="p-about__h3 c-title__h3 c-font-family__en c-color__brown c-title__h3 c-border-bottom">
             <?php
               $author_nicename = get_the_author_meta('display_name', $post->post_author);
               echo $author_nicename;
