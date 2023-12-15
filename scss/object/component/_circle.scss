@@ -4,22 +4,22 @@
   position: relative;
   &::before,
   &::after {
-    position: absolute;
-    content: "";
     height: 65%;
+    content: "";
+    position: absolute;
     aspect-ratio: 1;
     border-radius: 50%;
     z-index: -1;
   }
   &::before {
-    background-color: g.$color-yellow;
     top: -19%;
     left: -7.5%;
+    background-color: g.$color-yellow;
   }
   &::after {
-    background-color: g.$color-green;
     bottom: -24%;
     right: -7.5%;
+    background-color: g.$color-green;
   }
   &__page {
     @extend .c-circle;

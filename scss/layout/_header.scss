@@ -1,8 +1,8 @@
 @use "../foundation/global" as g;
 
 .l-header {
-  position: fixed;
   width:    100vw;
   height:   g.rem(65);
+  position: fixed;
   z-index: 990;
 }

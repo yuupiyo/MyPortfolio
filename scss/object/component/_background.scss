@@ -13,15 +13,15 @@
     background-color: g.$color-brown;
   }
   &__circle {
-    position: fixed;
-    z-index: 3;
     width: g.rem(100);
     height: g.rem(100);
-    border-radius: 50%;
-    background: g.$color-yellow;
-    transform: scale(0);
+    position: fixed;
     right: g.rem(-50);
     top: g.rem(-50);
+    border-radius: 50%;
+    background: g.$color-yellow;
+    z-index: 3;
+    transform: scale(0);
     transition: all .6s;
     &.is-circleactive {
       transform: scale(50);

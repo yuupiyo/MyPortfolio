@@ -11,9 +11,8 @@
   }
   &__works {
     @extend .c-button;
-    display: block;
-    
     padding: g.rem(8) g.rem(35);
+    display: block;
   }
   
   
