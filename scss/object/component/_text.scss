@@ -5,4 +5,10 @@
   @include g.sp {
     font-size: g.rem(16);
   }
+  &__span {
+    font-size: g.sp-vw(18);
+    @include g.sp {
+      font-size: g.rem(18);
+    }
+  }
 }

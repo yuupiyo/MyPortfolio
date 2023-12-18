@@ -61,6 +61,9 @@ img {
 .c-background__circle.is-circleactive {
   transform: scale(50);
 }
+.c-background__span {
+  background: linear-gradient(transparent 60%, #ff6 60%);
+}
 
 .c-border, .c-border__narrow, .c-border__back {
   border: 0.125rem solid #1B8343;
@@ -314,6 +317,14 @@ img {
     font-size: 1rem;
   }
 }
+.c-text__span {
+  font-size: 4.8vw;
+}
+@media screen and (width >= 375px) {
+  .c-text__span {
+    font-size: 1.125rem;
+  }
+}
 
 .c-title__h2 {
   font-size: clamp(2.5rem, 2.28rem + 0.94vw, 3.125rem);
@@ -325,6 +336,14 @@ img {
 @media screen and (width >= 375px) {
   .c-title__h3 {
     font-size: 1.875rem;
+  }
+}
+.c-title__contact {
+  font-size: 4vw;
+}
+@media screen and (width >= 375px) {
+  .c-title__contact {
+    font-size: 1.25rem;
   }
 }
 
@@ -358,15 +377,6 @@ img {
 .p-about__list {
   margin-top: 1.5rem;
 }
-.p-about__span {
-  font-size: 4.8vw;
-  background: linear-gradient(transparent 60%, #ff6 60%);
-}
-@media screen and (width >= 375px) {
-  .p-about__span {
-    font-size: 1.125rem;
-  }
-}
 .p-about__icon {
   width: clamp(2.25rem, 1.854rem + 1.69vw, 3.375rem);
 }
@@ -390,13 +400,7 @@ img {
   margin-left: 5%;
 }
 .p-contact__h3 {
-  font-size: 4vw;
   text-align: center;
-}
-@media screen and (width >= 375px) {
-  .p-contact__h3 {
-    font-size: 1.25rem;
-  }
 }
 
 .p-footer {
@@ -864,10 +868,10 @@ img {
     background: #1B8343;
     color: #FFFFFF;
   }
-  .u-hover__popup:hover .c-icon__codepen {
+  .u-hover__popup:hover .c-icon__stroke {
     stroke: #1B8343;
   }
-  .u-hover__popup:hover .c-icon__github {
+  .u-hover__popup:hover .c-icon__fill {
     fill: #1B8343;
   }
 }

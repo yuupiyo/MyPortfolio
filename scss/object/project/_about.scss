@@ -27,13 +27,6 @@
   &__list {
     margin-top: g.rem(24);
   }
-  &__span {
-    font-size: g.sp-vw(18);
-    background:linear-gradient(transparent 60%, #ff6 60%);
-    @include g.sp {
-      font-size: g.rem(18);
-    }
-  }
   &__icon {
     width: clamp(2.25rem, 1.854rem + 1.69vw, 3.375rem);
   }

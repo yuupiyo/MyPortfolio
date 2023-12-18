@@ -11,4 +11,10 @@
       font-size: g.rem(30);
     }
   }
+  &__contact {
+    font-size: 4vw;
+    @include g.sp {
+      font-size: g.rem(20);
+    }
+  }
 }
