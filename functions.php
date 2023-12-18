@@ -38,9 +38,10 @@ add_action('wp_enqueue_scripts', 'add_files');
 
 // ユーザー情報画面にSNSリンクをつける
 function my_user_sns($sns) {
-  $sns['buildup'] = 'BuildUp (URL)';
-  $sns['codepen'] = 'CodePen (URL)';
-  $sns['github'] = 'GitHub (URL)';
+  $sns['buildup'] = 'BuildUp URL';
+  $sns['x'] = 'X(旧Twitter) URL';
+  $sns['codepen'] = 'CodePen URL';
+  $sns['github'] = 'GitHub URL';
 
   return $sns;
 }

@@ -273,7 +273,7 @@ img {
   padding: 0.3125rem 0.5rem;
   position: absolute;
   top: 0;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   border-radius: 0.3125rem;
   box-shadow: 0 0.625rem 0.625rem rgba(0, 0, 0, 0.1);
   opacity: 0;
@@ -867,10 +867,10 @@ img {
     background: #1B8343;
     color: #FFFFFF;
   }
-  .u-hover__popup:active .c-icon__codepen {
+  .u-hover__popup:active .c-icon__stroke {
     stroke: #1B8343;
   }
-  .u-hover__popup:active .c-icon__github {
+  .u-hover__popup:active .c-icon__fill {
     fill: #1B8343;
   }
 }
