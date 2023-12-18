@@ -48,8 +48,8 @@
             <?php if(get_the_author_meta('buildup', $post->post_author) != ""): ?>
               <p class="c-font-family__ja c-color__brown c-text">日々の学習記録は、<a class="c-font-family__en c-text__span c-background__span" href="<?php echo get_the_author_meta('buildup', $post->post_author); ?>" target="_blank">「BuildUp」</a>にて更新しております。</p>
             <?php endif; ?>
-            <?php if(get_the_author_meta('codepen', $post->post_author) != ""): ?>
-              <ul class="p-about__list c-flex__about-icon">
+            <ul class="p-about__list c-flex__about-icon">
+              <?php if(get_the_author_meta('codepen', $post->post_author) != ""): ?>
                 <li class="c-icon u-hover__popup">
                   <p class="c-icon__name c-font-family__en c-color__white c-background__white">CodePen</p>
                   <a href="<?php echo get_the_author_meta('codepen', $post->post_author); ?>" target="_blank">
