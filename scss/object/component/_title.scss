@@ -17,4 +17,11 @@
       font-size: g.rem(20);
     }
   }
+  &__page {
+    display: inline-block;
+    font-size: g.sp-vw(45);
+    @include g.sp {
+      font-size: g.rem(45);
+    }
+  }
 }

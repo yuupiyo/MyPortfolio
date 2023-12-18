@@ -3,24 +3,10 @@
 .p-page {
   &__title {
     width: 100%;
-    margin: 0 auto;
+    margin-bottom: g.rem(40);
     text-align: center;
-  }
-  &__h2 {
-    margin-bottom: g.rem(96);
-    display: inline-block;
-    font-size: g.sp-vw(50);
-    @include g.sp {
-      font-size: g.rem(50);
-    }
-  }
-  &__form {
-    max-width: 640px;
-    width: 83.2%;
-    margin: 0 auto;
-    padding: 10% 7%;
     @include g.tablet {
-      width: 66.6%;
+      margin-bottom: g.rem(120);
     }
   }
   &__button {
@@ -34,5 +20,43 @@
     @include g.tablet {
       width: 75%;
     }
+  }
+  &__h3 {
+    margin-bottom: g.rem(16);
+    display: inline-block;
+    line-height: normal;
+    @include g.tablet {
+      margin-bottom: g.rem(24);
+    }
+  }
+  &__li {
+    max-width: 455px;
+    width: 87.2%;
+    padding: 5.2% 7.3%;
+    @include g.tablet {
+      width: 46%;
+      padding: 3.2%% 3.5%;
+    }
+  }
+  &__sp-image {
+    margin: 0 auto;
+  }
+  &__ol {
+    width: 87.2%;
+    margin: 0 auto;
+    @include g.tablet {
+      padding: 0 6.4%;
+    }
+  }
+  &__dt {
+    padding: 0 g.rem(16);
+    display: inline-block;
+    font-size: g.sp-vw(30);
+    @include g.sp {
+      font-size: g.rem(30);
+    }
+  }
+  &__dd {
+    padding: g.rem(40) g.rem(16);
   }
 }
