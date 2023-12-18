@@ -4,7 +4,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="宮崎県の小さな山村で4人のお母さんをしながら、コーダーを目指す日吉ゆかりのポートフォリオです。">
+  <meta name="description" content="宮崎県の小さな山村で4人のお母さんをしながら、転職活動する日吉ゆかりのポートフォリオです。">
+  <mata property="og:url" content="https://yuupiyo-web.com">
+  <mata property="og:title" content="Yukari Hiyoshi's Portfolio">
+  <mata property="og:description" content="宮崎県の小さな山村で4人のお母さんをしながら、転職活動する日吉ゆかりのポートフォリオです。">
+  <mata property="og:image" content="https://yuupiyo-web.com/images/portfolio.jpg">
+  <mata property="og:type" content="website">
+  <mata property="og:locale" content="ja_JP">
+  <mata property="og:site_name" content="Yukari Hiyoshi's Portfolio">
+  <mata property="twitter:card" content="summary_large_image">
+  <mata property="twitter:site" content="@yuupiyo_web">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <?php wp_head(); ?>
