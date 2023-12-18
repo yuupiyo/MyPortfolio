@@ -398,7 +398,7 @@ img {
   margin-bottom: 1.5rem;
 }
 .p-about__list {
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
 }
 .p-about__icon {
   width: clamp(2.25rem, 1.854rem + 1.69vw, 3.375rem);
