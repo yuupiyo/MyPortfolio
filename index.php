@@ -24,8 +24,8 @@
 
   <main class="l-main" ontouchstart="">
     <div class="c-inner">
-      <section id="about" class="p-about">
-        <h2 class="p-about__title c-font-family__en c-color__brown c-title__h2 js-fadein">About</h2>
+      <section id="about" class="p-about c-section">
+        <h2 class="c-section__title c-font-family__en c-color__brown c-title__h2 js-fadein">About</h2>
         <ul class="c-flex__about">
           <li class="p-about__photo js-fadein">
             <figure class="u-animation">
@@ -81,8 +81,8 @@
         </ul>
       </section>
 
-      <section id="skill" class="p-skill">
-        <h2 class="p-skill__title c-font-family__en c-color__brown c-title__h2 js-fadein">Skill</h2>
+      <section id="skill" class="p-skill c-section">
+        <h2 class="c-section__title c-font-family__en c-color__brown c-title__h2 js-fadein">Skill</h2>
         <ul class="c-flex__section">
         <?php
             $args = array(
@@ -116,8 +116,8 @@
         </ul>
       </section>
 
-      <section id="works" class="p-works">
-        <h2 class="p-works__title c-font-family__en c-color__brown c-title__h2 js-fadein">Works</h2>
+      <section id="works" class="p-works c-section">
+        <h2 class="c-section__title c-font-family__en c-color__brown c-title__h2 js-fadein">Works</h2>
         <ul class="c-flex__section">
           <?php
             $args = array(
@@ -149,8 +149,8 @@
         </ul>
       </section>
 
-      <section id="contact" class="p-contact js-fadein">
-        <h2 class="p-contact__title c-font-family__en c-color__brown c-title__h2">Contact</h2>
+      <section id="contact" class="p-contact c-section js-fadein">
+        <h2 class="c-section__title c-font-family__en c-color__brown c-title__h2">Contact</h2>
         <div class="p-contact__drop-right c-drop__right"></div>
         <section class="p-contact__drop-center c-drop__center u-hover__drop">
           <h3 class="p-contact__h3 c-font-family__ja--bold c-color__brown c-title__h3--contact">お問い合わせはこちらから</h3>

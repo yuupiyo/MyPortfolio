@@ -1,10 +1,6 @@
 @use "../../foundation/global" as g;
 
 .p-works {
-  margin-bottom: g.rem(240);
-  &__title {
-    margin-bottom: g.rem(80);
-  }
   &__h3 {
     margin-bottom: g.rem(16);
     text-align: center;

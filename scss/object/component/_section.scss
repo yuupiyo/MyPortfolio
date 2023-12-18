@@ -1,0 +1,8 @@
+@use "../../foundation/global" as g;
+
+.c-section {
+  margin-bottom: g.rem(240);
+  &__title {
+    margin-bottom: g.rem(80);
+  }
+}

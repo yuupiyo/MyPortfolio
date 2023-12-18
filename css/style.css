@@ -295,6 +295,13 @@ img {
   margin: 0 auto;
 }
 
+.c-section {
+  margin-bottom: 15rem;
+}
+.c-section__title {
+  margin-bottom: 5rem;
+}
+
 .c-shadow {
   box-shadow: 14px 14px 30px #bebebe;
 }
@@ -321,12 +328,6 @@ img {
   }
 }
 
-.p-about {
-  margin-bottom: 15rem;
-}
-.p-about__title {
-  margin-bottom: 5rem;
-}
 .p-about__photo {
   max-width: 440px;
   width: 87.2%;
@@ -370,12 +371,6 @@ img {
   width: clamp(2.25rem, 1.854rem + 1.69vw, 3.375rem);
 }
 
-.p-contact {
-  margin-bottom: 15rem;
-}
-.p-contact__title {
-  margin-bottom: 5rem;
-}
 .p-contact__drop-right {
   max-width: 80px;
   width: 11%;
@@ -699,12 +694,6 @@ img {
   padding: 2.5rem 1rem;
 }
 
-.p-skill {
-  margin-bottom: 15rem;
-}
-.p-skill__title {
-  margin-bottom: 5rem;
-}
 .p-skill__card {
   max-width: 433px;
   width: 88%;
@@ -722,12 +711,6 @@ img {
   margin-top: clamp(1rem, 0.648rem + 1.5vw, 2rem);
 }
 
-.p-works {
-  margin-bottom: 15rem;
-}
-.p-works__title {
-  margin-bottom: 5rem;
-}
 .p-works__h3 {
   margin-bottom: 1rem;
   text-align: center;
