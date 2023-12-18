@@ -16,17 +16,6 @@ function custom_theme_support() {
 }
 add_action('after_setup_theme', 'custom_theme_support');
 
-// タイトル出力
-function portfolio_title($title) {
-  if(is_front_page() && is_home()) {
-    $title = get_bloginfo('name', 'display');
-  } elseif(is_singular()) {
-    $title = single_post_title('', false);
-  }
-  return $title;
-}
-add_filter('pre_get_document_title', 'portfolio_title');
-
 // ファイル読み込み
 function add_files() {
   // フォント

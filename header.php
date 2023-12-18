@@ -14,6 +14,7 @@
   <mata property="og:site_name" content="Yukari Hiyoshi's Portfolio">
   <mata property="twitter:card" content="summary_large_image">
   <mata property="twitter:site" content="@yuupiyo_web">
+  <title><?php bloginfo( 'name' ); ?></title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <?php wp_head(); ?>
