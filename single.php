@@ -35,7 +35,7 @@
             <dt class="p-page__dt c-font-family__ja--bold c-color__brown c-border__narrow c-border-radius__narrow">コメント</dt>
             <dd class="p-page__dd c-text c-color__brown c-font-family__ja"><?php the_content(); ?></dd>
           </ol> 
-
+          <div id="abc">ヤッホー</div>
           <!-- // 次の記事/前の記事のナビゲーション生成 -->
           <?php
             the_post_navigation( array(

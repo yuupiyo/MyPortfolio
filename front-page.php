@@ -4,9 +4,9 @@
     <div class="p-mainvisual js-mainvisual">
       <div class="p-mainvisual__center">
         <h1 class="p-mainvisual__title c-font-family__en c-color__brown js-title">
-          <?php $user_id = get_the_author_meta('ID', $post->post_author); echo nl2br(get_field('maintitle', 'user_'.$user_id)); ?>
+          <?php $user_id = get_the_author_meta('ID', $post->post_author); echo get_field('maintitle', 'user_'.$user_id); ?>
         </h1>
-      </div>
+      </div> 
       <figure>
         <picture>
           <source srcset="<?php echo esc_url (get_theme_file_uri('/images/leaf-left.webp')); ?>" type="image/webp">

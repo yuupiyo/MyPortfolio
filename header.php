@@ -31,11 +31,12 @@
     </button>
     <nav class="p-nav js-nav">
       <ul class="c-flex__nav c-font-family__en c-color__brown">
-        <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skill">Skill</a></li>
-        <li><a href="#works">Works</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="<?php echo esc_url(home_url('/')); ?>">Home</a></li>
+        <li><a href="<?php echo esc_url(home_url('/')); ?>#about">About</a></li>
+        <li><a href="<?php echo esc_url(home_url('/')); ?>#skill">Skill</a></li>
+        <li><a href="<?php echo esc_url(home_url('/')); ?>#works">Works</a></li>
+        <li><a href="<?php echo esc_url(home_url('/')); ?>#contact">Contact</a></li>
+        <li><a href="<?php echo esc_url(home_url('/works/my-portforio')); ?>#abc">ヤッホー</a></li>
       </ul>
     </nav>
     <div class="c-background__circle js-circle"></div>

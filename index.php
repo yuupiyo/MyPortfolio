@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<!-- <?php get_header(); ?>
 
   <div class="l-container">
     <div class="p-mainvisual js-mainvisual">
@@ -171,4 +171,4 @@
     </div>
   </main>
 
-<?php get_footer(); ?>
+<?php get_footer(); ?> -->

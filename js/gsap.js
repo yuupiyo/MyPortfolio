@@ -5,14 +5,14 @@ const paragraph = document.querySelector(".js-title");
 const textContent = paragraph.innerHTML;
 
 const newTextContent = textContent
-  .split(/(\s|<br>)/) // 空白または<br>タグで分割
+  .split(/(\s|<br>)/) 
   .map((char) => {
     if (char === " " || char === "<br>") {
-      return char; // 空白または<br>タグの場合はそのまま返す
+      return char; 
     } else {
       return [...char]
         .map((c) => `<span>${c}</span>`)
-        .join(""); // 文字を<span>タグで囲んで返す
+        .join("");
     }
   })
   .join("");
