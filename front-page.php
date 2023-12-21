@@ -159,7 +159,7 @@
         </ul>
       </section>
 
-      <section id="contact" class="p-contact c-section js-fadein">
+      <section id="contact" class="p-contact c-section__contact js-fadein">
         <h2 class="c-section__title c-font-family__en c-color__brown c-title__h2">Contact</h2>
         <div class="p-contact__drop-right c-drop__right"></div>
         <section class="p-contact__drop-center c-drop__center u-hover__drop">

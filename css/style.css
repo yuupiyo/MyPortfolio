@@ -30,7 +30,7 @@ img {
 }
 
 .l-main {
-  padding-top: 10rem;
+  padding-top: 5.9375rem;
   margin-bottom: 12.25rem;
 }
 
@@ -301,10 +301,15 @@ img {
 }
 
 .c-section {
-  margin-bottom: 15rem;
+  margin-bottom: 10.9375rem;
+  padding-top: 4.0625rem;
 }
 .c-section__title {
   margin-bottom: 5rem;
+}
+.c-section__contact {
+  margin-bottom: 10.9375rem;
+  padding-top: 13.75rem;
 }
 .c-section__page {
   max-width: 640px;
