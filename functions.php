@@ -30,7 +30,7 @@ function add_files() {
 add_action('wp_enqueue_scripts', 'add_files');
 
 function add_custom_scripts() {
-  if ( is_front_page() ) { // front-page.phpの場合    
+  if ( is_front_page() ) { // front-page.phpの場合
     // // gsap
     // // The core GSAP library
     wp_enqueue_script( 'gsap', '//cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js', array(), '3.12.3', false );
