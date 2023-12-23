@@ -1,17 +1,17 @@
 
 gsap.registerPlugin(ScrollTrigger);
 
-const paragraph = document.querySelector(".js-title");
+const paragraph = document.querySelector('.js-title');
 const textContent = paragraph.innerHTML;
 
 const newTextContent = textContent
   .split(/(\s|<br>)/) 
   .map((char) => {
-    if (char === " " || char === "<br>") {
+    if (char === ' ' || char === '<br>') {
       return char; 
     } else {
       return [...char]
-        .map((c) => `<span>${c}</span>`)
+        .map((c) => `<span class="js-span">${c}</span>`)
         .join("");
     }
   })
@@ -20,7 +20,7 @@ const newTextContent = textContent
 paragraph.innerHTML = newTextContent;
 
 
-const texts = document.querySelectorAll('.js-title span');
+const texts = document.querySelectorAll('.js-span');
 const mainvisual = document.querySelector('.js-mainvisual');
 const mainLeft = document.querySelector('.js-mainvisualLeft');
 const mainRight = document.querySelector('.js-mainvisualRight');
