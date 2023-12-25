@@ -101,6 +101,9 @@ img {
   left: 0.1875rem;
   border-radius: 0.3125rem;
 }
+.c-border__image {
+  border: 0.0625rem solid #F2F2F2;
+}
 
 .c-border-bottom {
   border-bottom: 0.125rem solid #1B8343;

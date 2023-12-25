@@ -13,14 +13,14 @@
               <h3 class="p-page__h3 c-title__h3 c-font-family__en c-color__brown c-border-bottom">PC</h3>
               <figure>
                 <?php $pc_img = get_field('pc_img'); ?>
-                <img src="<?php echo $pc_img['url']; ?>"  width="<?php echo $pc_img['width']; ?>" height="<?php echo $pc_img['height']; ?>" alt="<?php echo $pc_img['alt']; ?>" loading="lazy">
+                <img class="c-border__image" src="<?php echo $pc_img['url']; ?>"  width="<?php echo $pc_img['width']; ?>" height="<?php echo $pc_img['height']; ?>" alt="<?php echo $pc_img['alt']; ?>" loading="lazy">
               </figure>
             </li>
             <li class="p-page__li c-background__white c-shadow c-border-radius">
               <h3 class="p-page__h3 c-title__h3 c-font-family__en c-color__brown c-border-bottom">SP</h3>
               <figure>
                 <?php $sp_img = get_field('sp_img'); ?>
-                <img class="p-page__sp-image" src="<?php echo $sp_img['url']; ?>" width="<?php echo $sp_img['width']; ?>" height="<?php echo $sp_img['height']; ?>" alt="<?php echo $sp_img['alt']; ?>" loading="lazy">
+                <img class="p-page__sp-image c-border__image" src="<?php echo $sp_img['url']; ?>" width="<?php echo $sp_img['width']; ?>" height="<?php echo $sp_img['height']; ?>" alt="<?php echo $sp_img['alt']; ?>" loading="lazy">
               </figure>
             </li>
           </ul>
@@ -35,7 +35,7 @@
             <dt class="p-page__dt c-font-family__ja--bold c-color__brown c-border__narrow c-border-radius__narrow">コメント</dt>
             <dd class="p-page__dd c-text c-color__brown c-font-family__ja"><?php the_content(); ?></dd>
           </ol> 
-          <div id="abc">ヤッホー</div>
+
           <!-- // 次の記事/前の記事のナビゲーション生成 -->
           <?php
             the_post_navigation( array(
