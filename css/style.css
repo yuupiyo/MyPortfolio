@@ -304,15 +304,11 @@ img {
 }
 
 .c-section {
-  margin-bottom: 10.9375rem;
+  margin-bottom: 11.5rem;
   padding-top: 4.0625rem;
 }
 .c-section__title {
   margin-bottom: 5rem;
-}
-.c-section__contact {
-  margin-bottom: 10.9375rem;
-  padding-top: 13.75rem;
 }
 .c-section__page {
   max-width: 640px;

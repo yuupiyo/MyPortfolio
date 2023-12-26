@@ -1,14 +1,10 @@
 @use "../../foundation/global" as g;
 
 .c-section {
-  margin-bottom: g.rem(175);
+  margin-bottom: g.rem(184);
   padding-top: g.rem(65);
   &__title {
     margin-bottom: g.rem(80);
-  }
-  &__contact {
-    margin-bottom: g.rem(175);
-    padding-top: g.rem(220);
   }
   &__page {
     max-width: 640px;

@@ -95,23 +95,23 @@ if (isTopPage) {
           },
         });
     });
-  } else {
-    // 下層ページの場合の処理
-    // 通常のページ内リンクを使って特定のセクションに移動するためのコードを記述する
-    // ページ内の全てのアンカーリンクを取得
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+    } else {
+      // 下層ページの場合の処理
+      // 通常のページ内リンクを使って特定のセクションに移動するためのコードを記述する
+      // ページ内の全てのアンカーリンクを取得
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
 
-        const targetId = this.getAttribute('href').substring(1); // リンク先のセクションのIDを取得
-        const targetElement = document.getElementById(targetId); // リンク先のセクションの要素を取得
+          const targetId = this.getAttribute('href').substring(1); // リンク先のセクションのIDを取得
+          const targetElement = document.getElementById(targetId); // リンク先のセクションの要素を取得
 
-        if (targetElement) {
-          // スクロール処理を実行
-          targetElement.scrollIntoView({
-            behavior: 'smooth' // スムーズなスクロールを有効化
-          });
-        }
+          if (targetElement) {
+            // スクロール処理を実行
+            targetElement.scrollIntoView({
+              behavior: 'smooth' // スムーズなスクロールを有効化
+            });
+          }
+        });
       });
-    });
-  }
+    }
