@@ -22,7 +22,7 @@
     gap: g.rem(32);
     @include g.tablet {
       justify-content: center;
-      gap: 12.5%;
+      gap: 11%;
     }
   }
   &__about-icon {

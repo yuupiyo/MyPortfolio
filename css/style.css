@@ -225,7 +225,7 @@ img {
 @media screen and (width >= 768px) {
   .c-flex__about {
     justify-content: center;
-    gap: 12.5%;
+    gap: 11%;
   }
 }
 .c-flex__about-icon {
@@ -379,11 +379,18 @@ img {
 }
 @media screen and (width >= 768px) {
   .p-about__photo {
-    width: 35.1%;
+    width: 38%;
   }
 }
 .p-about__photo img {
+  max-width: 324px;
+  width: 72.7%;
   margin: 0 auto;
+}
+@media screen and (width >= 768px) {
+  .p-about__photo img {
+    width: 100%;
+  }
 }
 .p-about__info {
   max-width: 440px;
