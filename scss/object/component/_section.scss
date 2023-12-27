@@ -6,6 +6,10 @@
   &__title {
     margin-bottom: g.rem(80);
   }
+  &__contact {
+    @extend .c-section;
+    margin-bottom: g.rem(240);
+  }
   &__page {
     max-width: 640px;
     width: 83.2%;
