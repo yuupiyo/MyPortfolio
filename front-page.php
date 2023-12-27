@@ -29,7 +29,8 @@
         <ul class="c-flex__about">
           <li class="p-about__photo js-fadein">
             <figure class="u-animation">
-              <img src="<?php $user_id = get_the_author_meta('ID', $post->post_author); the_field('myphoto', 'user_'.$user_id); ?>" width="285" height="453" alt="自分の写真" loading="lazy">
+              <?php $user_id = get_the_author_meta('ID', $post->post_author); $myphoto = get_field('myphoto', 'user_'.$user_id); ?>
+              <img src="<?php echo $myphoto['url']; ?>" width="<?php echo $myphoto['width']; ?>" height="<?php echo $myphoto['height']; ?>" alt="<?php echo $myphoto['alt']; ?>" loading="lazy">
             </figure>
           </li>
           <li class="p-about__info c-background__white c-shadow c-border-radius js-fadein">
