@@ -4,7 +4,7 @@
     <div class="p-mainvisual js-mainvisual">
       <div class="p-mainvisual__center">
         <h1 class="p-mainvisual__title c-font-family__en c-color__brown js-title">
-          <?php $user_id = get_the_author_meta('ID', $post->post_author); echo get_field('maintitle', 'user_'.$user_id); ?>
+          <?php $user_id = get_the_author_meta('ID', $post->post_author); the_field('maintitle', 'user_'.$user_id); ?>
         </h1>
       </div> 
       <figure>
@@ -165,7 +165,7 @@
         <div class="p-contact__drop-right c-drop__right js-fadein"></div>
         <section class="p-contact__drop-center c-drop__center u-hover__drop js-fadein">
           <h3 class="p-contact__h3 c-font-family__ja--bold c-color__brown c-title__contact">お問い合わせはこちらから</h3>
-          <button class="c-button c-font-family__ja--bold" type="button"><a href="<?php echo home_url('/contactform'); ?>">お問い合わせフォームへ</a></button>
+          <button class="c-button c-font-family__ja--bold" type="button"><a href="<?php echo esc_url(home_url('/contactform')); ?>">お問い合わせフォームへ</a></button>
         </section>
         <div class="p-contact__drop-left c-drop__left js-fadein"></div>
       </section>

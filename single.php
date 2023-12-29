@@ -4,7 +4,7 @@
     <div class="c-inner__page">
       <?php if ( have_posts() ): ?>
         <?php while ( have_posts() ): the_post(); ?>
-          <div class="p-page__title">
+          <div class="p-page__title" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
             <h2 class="c-title__page c-font-family__en c-color__brown c-circle"><?php the_title(); ?></h2>
             <p class="c-text c-font-family__en c-color__brown"><?php the_field('sub_title'); ?></p>
           </div>
@@ -44,6 +44,8 @@
               'class' => 'p-pagenation' // お好きなクラス名をココに
             ) );
           ?>    
+        
+          <?php wp_link_pages(); ?>
         <?php endwhile; else: ?>
           <p>記事はありません。</p>
       <?php endif; ?>

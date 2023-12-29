@@ -1,12 +1,12 @@
-<!-- <?php get_header(); ?>
+<?php get_header(); ?>
 
   <div class="l-container">
     <div class="p-mainvisual js-mainvisual">
       <div class="p-mainvisual__center">
         <h1 class="p-mainvisual__title c-font-family__en c-color__brown js-title">
-          <?php $user_id = get_the_author_meta('ID', $post->post_author); echo nl2br(get_field('maintitle', 'user_'.$user_id)); ?>
+          <?php $user_id = get_the_author_meta('ID', $post->post_author); the_field('maintitle', 'user_'.$user_id); ?>
         </h1>
-      </div>
+      </div> 
       <figure>
         <picture>
           <source srcset="<?php echo esc_url (get_theme_file_uri('/images/leaf-left.webp')); ?>" type="image/webp">
@@ -29,7 +29,8 @@
         <ul class="c-flex__about">
           <li class="p-about__photo js-fadein">
             <figure class="u-animation">
-              <img src="<?php $user_id = get_the_author_meta('ID', $post->post_author); the_field('myphoto', 'user_'.$user_id); ?>" width="285" height="453" alt="自分の写真" loading="lazy">
+              <?php $user_id = get_the_author_meta('ID', $post->post_author); $myphoto = get_field('myphoto', 'user_'.$user_id); ?>
+              <img src="<?php echo $myphoto['url']; ?>" width="<?php echo $myphoto['width']; ?>" height="<?php echo $myphoto['height']; ?>" alt="<?php echo $myphoto['alt']; ?>" loading="lazy">
             </figure>
           </li>
           <li class="p-about__info c-background__white c-shadow c-border-radius js-fadein">
@@ -159,16 +160,16 @@
         </ul>
       </section>
 
-      <section id="contact" class="p-contact c-section__contact js-fadein">
-        <h2 class="c-section__title c-font-family__en c-color__brown c-title__h2">Contact</h2>
-        <div class="p-contact__drop-right c-drop__right"></div>
-        <section class="p-contact__drop-center c-drop__center u-hover__drop">
+      <section id="contact" class="p-contact c-section__contact">
+        <h2 class="c-section__title c-font-family__en c-color__brown c-title__h2 js-fadein">Contact</h2>
+        <div class="p-contact__drop-right c-drop__right js-fadein"></div>
+        <section class="p-contact__drop-center c-drop__center u-hover__drop js-fadein">
           <h3 class="p-contact__h3 c-font-family__ja--bold c-color__brown c-title__contact">お問い合わせはこちらから</h3>
-          <button class="c-button c-font-family__ja--bold" type="button"><a href="<?php echo home_url('/contactform'); ?>">お問い合わせフォームへ</a></button>
+          <button class="c-button c-font-family__ja--bold" type="button"><a href="<?php echo esc_url(home_url('/contactform')); ?>">お問い合わせフォームへ</a></button>
         </section>
-        <div class="p-contact__drop-left c-drop__left"></div>
+        <div class="p-contact__drop-left c-drop__left js-fadein"></div>
       </section>
     </div>
   </main>
 
-<?php get_footer(); ?> -->
+<?php get_footer(); ?>
