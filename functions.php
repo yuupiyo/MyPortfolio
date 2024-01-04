@@ -31,12 +31,12 @@ add_action('wp_enqueue_scripts', 'add_files');
 
 function add_custom_scripts() {
   if ( is_front_page() ) { // front-page.phpの場合
-    // // gsap
-    // // The core GSAP library
-    wp_enqueue_script( 'gsap', '//cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js', array(), '3.12.3', true );
-    // // ScrollTrigger - with gsap.js passed as a dependency
-    wp_enqueue_script( 'gsap-st', '//cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js', array('gsap'), '3.12.3', true );
-    // // Your animation code file - with gsap.js passed as a dependency
+    // gsap
+    // The core GSAP library
+    wp_enqueue_script( 'gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js',  array(), false, true );
+    // ScrollTrigger - with gsap.js passed as a dependency
+    wp_enqueue_script( 'gsap-st', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js', array('gsap'),  false, true );
+    // Your animation code file - with gsap.js passed as a dependency
     wp_enqueue_script( 'gsapjs', get_theme_file_uri('/js/gsap.js'), array('gsap'), '',  array('strategy' => 'defer', 'in_footer' => true));
   }
 }
