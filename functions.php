@@ -25,7 +25,7 @@ function add_files() {
   wp_enqueue_style('main-css', get_theme_file_uri('/css/style.css'), array('reset-css'), '1.0.0');
   wp_enqueue_style('style-css', get_theme_file_uri('/style.css'), array(), '1.0.0');
   // JavaScript
-  wp_enqueue_script('mainjs', get_theme_file_uri('/js/main.js'), array(), '1.0.0', array('strategy' => 'defer', 'in_footer' => true));
+  // wp_enqueue_script('mainjs', get_theme_file_uri('/js/main.js'), array(), '1.0.0', array('strategy' => 'defer', 'in_footer' => true));
 }
 add_action('wp_enqueue_scripts', 'add_files');
 
@@ -38,6 +38,10 @@ function add_custom_scripts() {
     wp_enqueue_script( 'gsap-st', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js', array('gsap'),  false, true );
     // Your animation code file - with gsap.js passed as a dependency
     wp_enqueue_script( 'gsapjs', get_theme_file_uri('/js/gsap.js'), array('gsap'), '',  array('strategy' => 'defer', 'in_footer' => true));
+    // JavaScript
+    wp_enqueue_script('mainjs', get_theme_file_uri('/js/main.js'), array(), '1.0.0', array('strategy' => 'defer', 'in_footer' => true));
+  } else {
+    wp_enqueue_script('mainjs', get_theme_file_uri('/js/main.js'), array(), '1.0.0', array('strategy' => 'defer', 'in_footer' => true));
   }
 }
 add_action('wp_enqueue_scripts', 'add_custom_scripts');
