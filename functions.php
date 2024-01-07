@@ -31,18 +31,11 @@ function add_custom_scripts() {
   if ( is_front_page() ) { // front-page.phpの場合
     // gsap
     // The core GSAP library
-
-    // wp_enqueue_script( 'gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js',  array(), array('strategy' => 'defer', 'in_footer' => true) );
     wp_enqueue_script( 'gsap', get_theme_file_uri('/js/gsap.min.js'),  array(), array('strategy' => 'defer', 'in_footer' => true) );
-
     // ScrollTrigger - with gsap.js passed as a dependency
-
-    // wp_enqueue_script( 'gsap-st', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js', array('gsap'),  array('strategy' => 'defer', 'in_footer' => true) );
     wp_enqueue_script( 'gsap-st', get_theme_file_uri('/js/ScrollTrigger.min.js'), array('gsap'),  array('strategy' => 'defer', 'in_footer' => true) );
-    
     // Your animation code file - with gsap.js passed as a dependency
     wp_enqueue_script( 'gsapjs', get_theme_file_uri('/js/gsap.js'), array('gsap'), '',  array('strategy' => 'defer', 'in_footer' => true));
-
     // JavaScript
     wp_enqueue_script('mainjs', get_theme_file_uri('/js/main.js'), array(), '1.0.0', array('strategy' => 'defer', 'in_footer' => true));
   } else {

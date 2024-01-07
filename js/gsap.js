@@ -19,7 +19,7 @@ const newTextContent = textContent
 
 paragraph.innerHTML = newTextContent;
 
-const isTopPage = window.location.pathname === '/' || window.location.pathname === '/front-page.php'; // トップページかどうかを判定する例
+const isTopPage = window.location.pathname === '/portfolio/' || window.location.pathname === '/portfolio/front-page.php'; // トップページかどうかを判定する例
 
 if (isTopPage) {
   // トップページの場合のGSAP ScrollTriggerの設定
