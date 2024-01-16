@@ -87,3 +87,9 @@
     font-size: g.rem(16);
   }
 }
+.smf-action:active .smf-button-control__control:active,
+.smf-form:active .smf-item:active .smf-file-control__label:active {
+  background-color: g.$color-white;
+  border: 1px solid g.$color-green;
+  color: g.$color-green;
+}
