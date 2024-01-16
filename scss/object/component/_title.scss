@@ -19,8 +19,11 @@
   }
   &__page {
     display: inline-block;
-    font-size: g.sp-vw(45);
+    font-size: g.sp-vw(35);
     @include g.sp {
+      font-size: g.rem(35);
+    }
+    @include g.tablet {
       font-size: g.rem(45);
     }
   }
