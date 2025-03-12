@@ -44,6 +44,20 @@ function add_custom_scripts() {
 }
 add_action('wp_enqueue_scripts', 'add_custom_scripts');
 
+add_action('wp_loaded', 'prefix_output_buffer_start');
+function prefix_output_buffer_start() { 
+    ob_start("prefix_output_callback"); 
+}
+
+add_action('shutdown', 'prefix_output_buffer_end');
+function prefix_output_buffer_end() { 
+    ob_end_flush(); 
+}
+
+function prefix_output_callback($buffer) {
+    return preg_replace( "%[ ]type=[\'\"]text\/(javascript|css)[\'\"]%", '', $buffer );
+}
+
 
 // ユーザー情報画面にSNSリンクをつける
 function my_user_sns($sns) {
@@ -101,3 +115,5 @@ function create_post_type() {
 
 }
 add_action( 'init', 'create_post_type' );
+
+remove_action( 'wp_head', 'wp_print_auto_sizes_contain_css_fix', 1 );

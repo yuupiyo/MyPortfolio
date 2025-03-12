@@ -350,11 +350,11 @@ img {
   font-size: clamp(2.5rem, 2.28rem + 0.94vw, 3.125rem);
   text-align: center;
 }
-.c-title__h3 {
+.c-title__h3, .c-title__single {
   font-size: 8vw;
 }
 @media screen and (width >= 375px) {
-  .c-title__h3 {
+  .c-title__h3, .c-title__single {
     font-size: 1.875rem;
   }
 }
@@ -539,6 +539,11 @@ img {
   font-size: 7.8125vw;
   text-align: center;
 }
+@media screen and (width >= 1120px) {
+  .p-mainvisual__title {
+    font-size: min(7.77vw, 112px);
+  }
+}
 .p-mainvisual__title span {
   display: inline-block;
 }
@@ -629,13 +634,13 @@ img {
     width: 75%;
   }
 }
-.p-page__h3 {
+.p-page__h2 {
   margin-bottom: 1rem;
   display: inline-block;
   line-height: normal;
 }
 @media screen and (width >= 768px) {
-  .p-page__h3 {
+  .p-page__h2 {
     margin-bottom: 1.5rem;
   }
 }
@@ -745,6 +750,7 @@ img {
   width: 100%;
   height: 100%;
   padding: 2.5rem 3% 0 5%;
+  text-align: right;
   position: absolute;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -767,8 +773,8 @@ img {
   transform: rotateY(180deg);
 }
 .p-works__button {
+  display: inline-block;
   margin-top: 0.5rem;
-  margin-left: auto;
 }
 
 .u-animation {

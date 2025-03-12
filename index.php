@@ -22,7 +22,7 @@
     </div>
   </div>
 
-  <main class="l-main" ontouchstart="">
+  <main class="l-main">
     <div class="c-inner">
       <section id="about" class="p-about c-section">
         <h2 class="c-section__title c-font-family__en c-color__brown c-title__h2 js-fadein">About</h2>
@@ -34,7 +34,7 @@
             </figure>
           </li>
           <li class="p-about__info c-background__white c-shadow c-border-radius js-fadein">
-            <h3 class="p-about__h3 c-title__h3 c-font-family__en c-color__brown c-title__h3 c-border-bottom">
+            <h3 class="p-about__h3 c-title__h3 c-font-family__en c-color__brown c-border-bottom">
             <?php
               $author_nicename = get_the_author_meta('display_name', $post->post_author);
               echo $author_nicename;
@@ -148,7 +148,7 @@
                     <figure>
                       <?php the_post_thumbnail('full'); ?>
                     </figure>
-                    <button class="p-works__button c-button__works c-font-family__en" type="button">Read More</button>
+                    <p class="p-works__button c-button__works c-font-family__en" type="button">Read More</p>
                   </div>
                   <div class="p-works__card-back c-border__back c-border-radius c-background__white">
                     <div class="c-font-family__ja c-color__brown c-text"><?php the_excerpt(); ?></div>

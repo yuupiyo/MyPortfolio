@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main class="l-main p-page" ontouchstart="">
+<main class="l-main p-page">
   <div class="p-page__title">
     <h2 class="c-title__page c-font-family__en c-color__brown c-circle">NOT FOUND</h2>
     <p class="c-text c-font-family__en c-color__brown">ページが見つかりません</p>
