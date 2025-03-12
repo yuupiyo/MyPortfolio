@@ -434,6 +434,7 @@ img {
   display: grid;
   place-content: center;
   gap: 10%;
+  text-align: center;
 }
 .p-contact__drop-left {
   max-width: 100px;
